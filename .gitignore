@@ -1,0 +1,6 @@
+# SECURITY: This is a PUBLIC repo. Only index.html and stats.json belong here.
+# Reject everything by default, then whitelist only safe files.
+*
+!.gitignore
+!index.html
+!stats.json
