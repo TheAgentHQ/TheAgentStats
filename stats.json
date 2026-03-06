@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-06T22:34:29.502402+00:00",
+  "generated_at": "2026-03-06T22:44:53.814931+00:00",
   "aggregate": {
     "total_accounts": 7,
     "total_followers": 118,
-    "total_posts": 873,
+    "total_posts": 874,
     "total_threads": 595,
     "total_engagement_actions": 273,
     "avg_engagement_rate": 19.2,
-    "posts_today": 620,
-    "posts_this_week": 873,
+    "posts_today": 621,
+    "posts_this_week": 874,
     "system_uptime_hours": 87,
-    "drafts_in_queue": 568
+    "drafts_in_queue": 567
   },
   "accounts": [
     {
@@ -59,7 +59,7 @@
       "threads_total": 29,
       "avg_engagement_rate": 8.8,
       "top_post_likes": 1,
-      "drafts_queued": 198
+      "drafts_queued": 197
     },
     {
       "label": "Account 5",
@@ -90,8 +90,8 @@
       "niche": "Uplifting",
       "followers": 25,
       "followers_delta_24h": 10,
-      "posts_total": 381,
-      "posts_today": 266,
+      "posts_total": 382,
+      "posts_today": 267,
       "threads_total": 38,
       "avg_engagement_rate": 4.4,
       "top_post_likes": 1,
