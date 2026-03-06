@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-06T10:33:30.374085+00:00",
+  "generated_at": "2026-03-06T10:44:29.798388+00:00",
   "aggregate": {
-    "total_accounts": 6,
+    "total_accounts": 7,
     "total_followers": 71,
     "total_posts": 410,
     "total_threads": 194,
@@ -10,7 +10,7 @@
     "posts_today": 157,
     "posts_this_week": 410,
     "system_uptime_hours": 75,
-    "drafts_in_queue": 518
+    "drafts_in_queue": 531
   },
   "accounts": [
     {
@@ -75,6 +75,18 @@
     },
     {
       "label": "Account 6",
+      "niche": "Intern",
+      "followers": 0,
+      "followers_delta_24h": null,
+      "posts_total": 0,
+      "posts_today": 0,
+      "threads_total": 0,
+      "avg_engagement_rate": 0.0,
+      "top_post_likes": 0,
+      "drafts_queued": 5
+    },
+    {
+      "label": "Account 7",
       "niche": "Uplifting",
       "followers": 19,
       "followers_delta_24h": null,
@@ -83,7 +95,7 @@
       "threads_total": 15,
       "avg_engagement_rate": 3.4,
       "top_post_likes": 1,
-      "drafts_queued": 131
+      "drafts_queued": 139
     }
   ]
 }
