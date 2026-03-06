@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-06T10:18:01.811868+00:00",
+  "generated_at": "2026-03-06T10:33:30.374085+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 71,
-    "total_posts": 401,
-    "total_threads": 186,
-    "total_engagement_actions": 94,
-    "avg_engagement_rate": 9.7,
-    "posts_today": 148,
-    "posts_this_week": 401,
+    "total_posts": 410,
+    "total_threads": 194,
+    "total_engagement_actions": 100,
+    "avg_engagement_rate": 9.8,
+    "posts_today": 157,
+    "posts_this_week": 410,
     "system_uptime_hours": 75,
-    "drafts_in_queue": 508
+    "drafts_in_queue": 518
   },
   "accounts": [
     {
@@ -42,12 +42,12 @@
       "niche": "Finance",
       "followers": 14,
       "followers_delta_24h": null,
-      "posts_total": 151,
-      "posts_today": 40,
+      "posts_total": 152,
+      "posts_today": 41,
       "threads_total": 10,
       "avg_engagement_rate": 1.3,
       "top_post_likes": 0,
-      "drafts_queued": 190
+      "drafts_queued": 191
     },
     {
       "label": "Account 4",
@@ -71,17 +71,17 @@
       "threads_total": 1,
       "avg_engagement_rate": 0.0,
       "top_post_likes": 0,
-      "drafts_queued": 114
+      "drafts_queued": 123
     },
     {
       "label": "Account 6",
       "niche": "Uplifting",
       "followers": 19,
       "followers_delta_24h": null,
-      "posts_total": 192,
-      "posts_today": 77,
-      "threads_total": 14,
-      "avg_engagement_rate": 3.2,
+      "posts_total": 200,
+      "posts_today": 85,
+      "threads_total": 15,
+      "avg_engagement_rate": 3.4,
       "top_post_likes": 1,
       "drafts_queued": 131
     }
