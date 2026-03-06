@@ -1,101 +1,101 @@
 {
-  "generated_at": "2026-03-06T14:44:29.733961+00:00",
+  "generated_at": "2026-03-06T18:44:29.733440+00:00",
   "aggregate": {
     "total_accounts": 7,
-    "total_followers": 81,
-    "total_posts": 537,
-    "total_threads": 293,
-    "total_engagement_actions": 123,
-    "avg_engagement_rate": 20.6,
-    "posts_today": 284,
-    "posts_this_week": 537,
-    "system_uptime_hours": 79,
-    "drafts_in_queue": 604
+    "total_followers": 112,
+    "total_posts": 729,
+    "total_threads": 467,
+    "total_engagement_actions": 186,
+    "avg_engagement_rate": 30.4,
+    "posts_today": 476,
+    "posts_this_week": 729,
+    "system_uptime_hours": 83,
+    "drafts_in_queue": 636
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 31,
+      "followers": 48,
       "followers_delta_24h": null,
-      "posts_total": 48,
-      "posts_today": 34,
-      "threads_total": 12,
-      "avg_engagement_rate": 1.1,
+      "posts_total": 66,
+      "posts_today": 52,
+      "threads_total": 19,
+      "avg_engagement_rate": 1.2,
       "top_post_likes": 1,
-      "drafts_queued": 39
+      "drafts_queued": 38
     },
     {
       "label": "Account 2",
       "niche": "Degen",
-      "followers": 12,
+      "followers": 13,
       "followers_delta_24h": null,
-      "posts_total": 29,
-      "posts_today": 27,
-      "threads_total": 4,
-      "avg_engagement_rate": 88.9,
+      "posts_total": 36,
+      "posts_today": 34,
+      "threads_total": 5,
+      "avg_engagement_rate": 145.5,
       "top_post_likes": 0,
-      "drafts_queued": 16
+      "drafts_queued": 27
     },
     {
       "label": "Account 3",
       "niche": "Finance",
-      "followers": 14,
+      "followers": 16,
       "followers_delta_24h": null,
-      "posts_total": 186,
-      "posts_today": 75,
-      "threads_total": 14,
-      "avg_engagement_rate": 1.2,
-      "top_post_likes": 0,
-      "drafts_queued": 225
+      "posts_total": 240,
+      "posts_today": 129,
+      "threads_total": 21,
+      "avg_engagement_rate": 4.1,
+      "top_post_likes": 1,
+      "drafts_queued": 211
     },
     {
       "label": "Account 4",
       "niche": "Geopolitics",
       "followers": 1,
       "followers_delta_24h": null,
-      "posts_total": 10,
-      "posts_today": 8,
+      "posts_total": 11,
+      "posts_today": 9,
       "threads_total": 0,
-      "avg_engagement_rate": 0.0,
-      "top_post_likes": 0,
-      "drafts_queued": 12
+      "avg_engagement_rate": 7.5,
+      "top_post_likes": 2,
+      "drafts_queued": 20
     },
     {
       "label": "Account 5",
       "niche": "Intern",
-      "followers": 0,
+      "followers": 5,
       "followers_delta_24h": null,
-      "posts_total": 17,
-      "posts_today": 8,
-      "threads_total": 1,
-      "avg_engagement_rate": 8.1,
+      "posts_total": 40,
+      "posts_today": 31,
+      "threads_total": 4,
+      "avg_engagement_rate": 19.7,
       "top_post_likes": 1,
-      "drafts_queued": 147
+      "drafts_queued": 179
     },
     {
       "label": "Account 6",
       "niche": "Intern",
-      "followers": 4,
+      "followers": 5,
       "followers_delta_24h": null,
       "posts_total": 0,
       "posts_today": 0,
       "threads_total": 0,
       "avg_engagement_rate": 0.0,
       "top_post_likes": 0,
-      "drafts_queued": 5
+      "drafts_queued": 8
     },
     {
       "label": "Account 7",
       "niche": "Uplifting",
-      "followers": 19,
+      "followers": 24,
       "followers_delta_24h": null,
-      "posts_total": 247,
-      "posts_today": 132,
-      "threads_total": 20,
-      "avg_engagement_rate": 3.7,
+      "posts_total": 336,
+      "posts_today": 221,
+      "threads_total": 31,
+      "avg_engagement_rate": 4.2,
       "top_post_likes": 1,
-      "drafts_queued": 160
+      "drafts_queued": 153
     }
   ]
 }
