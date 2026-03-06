@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autonomous Social System — Live Telemetry</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0c;
+  --bg-card: #111115;
+  --bg-card-hover: #16161b;
+  --border: #1e1e25;
+  --border-bright: #2a2a35;
+  --text: #c8c8d0;
+  --text-dim: #6a6a78;
+  --text-bright: #eaeaf0;
+  --accent: #00e5a0;
+  --accent-dim: #00e5a033;
+  --accent-glow: #00e5a018;
+  --red: #ff4d6a;
+  --amber: #ffb347;
+  --blue: #4d9fff;
+  --mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  --sans: 'Space Grotesk', system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scanline overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Subtle grid background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  position: relative;
+}
+
+/* Header */
+.header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent), 0 0 20px var(--accent-dim);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.header-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+h1 {
+  font-family: var(--sans);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-bright);
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-size: 12px;
+}
+
+.subtitle span {
+  color: var(--text);
+}
+
+/* Section headers */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 48px;
+}
+
+.section-header::before {
+  content: '//';
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.section-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-bright), transparent);
+}
+
+/* Stat cards grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px 18px;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-dim), transparent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.stat-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-bright);
+}
+
+.stat-card:hover::before {
+  opacity: 1;
+}
+
+.stat-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.stat-value {
+  font-family: var(--sans);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.stat-value.accent {
+  color: var(--accent);
+}
+
+.stat-suffix {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-dim);
+  margin-left: 2px;
+}
+
+.stat-detail {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 6px;
+}
+
+.stat-detail .up { color: var(--accent); }
+.stat-detail .down { color: var(--red); }
+.stat-detail .neutral { color: var(--amber); }
+
+/* Account cards */
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 14px;
+}
+
+.account-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 22px 20px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.account-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-bright);
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.account-name {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+.niche-badge {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.niche-badge.uplifting { color: #00e5a0; border-color: #00e5a044; background: #00e5a00a; }
+.niche-badge.finance { color: #4d9fff; border-color: #4d9fff44; background: #4d9fff0a; }
+.niche-badge.intern { color: #ffb347; border-color: #ffb34744; background: #ffb3470a; }
+.niche-badge.ai { color: #c084fc; border-color: #c084fc44; background: #c084fc0a; }
+.niche-badge.geopolitics { color: #f472b6; border-color: #f472b644; background: #f472b60a; }
+.niche-badge.degen { color: #fb923c; border-color: #fb923c44; background: #fb923c0a; }
+
+.account-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.account-stat {
+  text-align: center;
+  padding: 10px 4px;
+  background: rgba(255,255,255,0.015);
+  border-radius: 4px;
+}
+
+.account-stat-value {
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-bright);
+  line-height: 1;
+}
+
+.account-stat-label {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 5px;
+}
+
+.account-stat-delta {
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.account-stat-delta.positive { color: var(--accent); }
+.account-stat-delta.negative { color: var(--red); }
+
+.account-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.account-footer span { color: var(--text); }
+
+/* Footer */
+.footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.footer-left { display: flex; align-items: center; gap: 8px; }
+.footer-dot {
+  width: 5px; height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-dim);
+}
+
+.loading-bar {
+  width: 200px;
+  height: 2px;
+  background: var(--border);
+  margin: 16px auto;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.loading-bar::after {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+  animation: load 1.2s ease-in-out infinite;
+}
+
+@keyframes load {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+
+/* Error state */
+.error {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--red);
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { padding: 24px 16px; }
+  h1 { font-size: 22px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .accounts-grid { grid-template-columns: 1fr; }
+  .account-stats { grid-template-columns: repeat(2, 1fr); }
+  .stat-value { font-size: 26px; }
+  .footer { flex-direction: column; gap: 8px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat-card { padding: 14px 12px; }
+  .stat-value { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="status-dot"></div>
+      <span class="header-label">System Online</span>
+    </div>
+    <h1>Autonomous Social Media System</h1>
+    <div class="subtitle">Live telemetry from an AI-powered content engine &middot; Updated <span id="updated-time">—</span></div>
+  </header>
+
+  <div id="content">
+    <div class="loading">
+      <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase;">Loading telemetry</div>
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const $ = (s, el) => (el || document).querySelector(s);
+  const $$ = (s, el) => [...(el || document).querySelectorAll(s)];
+
+  function fmt(n) {
+    if (n == null) return '—';
+    if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+    if (n >= 10000) return (n / 1000).toFixed(1) + 'k';
+    if (n >= 1000) return n.toLocaleString();
+    return String(n);
+  }
+
+  function fmtPct(n) {
+    if (n == null) return '—';
+    return n.toFixed(1) + '%';
+  }
+
+  function delta(n) {
+    if (n == null || n === 0) return '';
+    const cls = n > 0 ? 'positive' : 'negative';
+    const sign = n > 0 ? '+' : '';
+    return `<span class="account-stat-delta ${cls}">${sign}${n}</span>`;
+  }
+
+  function timeAgo(iso) {
+    if (!iso) return '—';
+    const diff = Date.now() - new Date(iso).getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 1) return 'just now';
+    if (mins < 60) return mins + 'm ago';
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return hrs + 'h ago';
+    const days = Math.floor(hrs / 24);
+    return days + 'd ago';
+  }
+
+  function nicheClass(niche) {
+    const n = (niche || '').toLowerCase();
+    if (n.includes('uplift') || n.includes('kind')) return 'uplifting';
+    if (n.includes('financ') || n.includes('money')) return 'finance';
+    if (n.includes('intern') || n.includes('corporate')) return 'intern';
+    if (n.includes('ai') || n.includes('agent') || n.includes('auto')) return 'ai';
+    if (n.includes('geo') || n.includes('politic')) return 'geopolitics';
+    if (n.includes('degen') || n.includes('crypto')) return 'degen';
+    return '';
+  }
+
+  function render(data) {
+    const a = data.aggregate || {};
+    const accounts = data.accounts || [];
+
+    $('#updated-time').textContent = timeAgo(data.generated_at);
+
+    let html = '';
+
+    // Aggregate stats
+    html += '<div class="section-header"><span class="section-title">System Overview</span></div>';
+    html += '<div class="stats-grid">';
+    html += card('Accounts', a.total_accounts, '');
+    html += card('Total Followers', fmt(a.total_followers), '', true);
+    html += card('Total Posts', fmt(a.total_posts), '');
+    html += card('Threads', fmt(a.total_threads), '');
+    html += card('Posts Today', fmt(a.posts_today), '');
+    html += card('This Week', fmt(a.posts_this_week), '');
+    html += card('Engagement', fmt(a.total_engagement_actions), '');
+    html += card('Avg Engage Rate', fmtPct(a.avg_engagement_rate), '', true);
+    html += card('Drafts Queued', fmt(a.drafts_in_queue), '');
+    html += card('Uptime', fmt(a.system_uptime_hours), 'h');
+    html += '</div>';
+
+    // Per-account
+    html += '<div class="section-header"><span class="section-title">Per-Account Telemetry</span></div>';
+    html += '<div class="accounts-grid">';
+    for (const acct of accounts) {
+      html += accountCard(acct);
+    }
+    html += '</div>';
+
+    // Footer
+    html += '<footer class="footer">';
+    html += '<div class="footer-left"><div class="footer-dot"></div>Fully autonomous &middot; No human intervention</div>';
+    html += '<div>AI agents &middot; LLM content &middot; Self-healing infrastructure</div>';
+    html += '</footer>';
+
+    $('#content').innerHTML = html;
+  }
+
+  function card(label, value, suffix, accent) {
+    return `<div class="stat-card">
+      <div class="stat-label">${label}</div>
+      <div class="stat-value${accent ? ' accent' : ''}">${value}${suffix ? `<span class="stat-suffix">${suffix}</span>` : ''}</div>
+    </div>`;
+  }
+
+  function accountCard(acct) {
+    const nc = nicheClass(acct.niche);
+    return `<div class="account-card">
+      <div class="account-header">
+        <span class="account-name">${acct.label}</span>
+        <span class="niche-badge ${nc}">${acct.niche}</span>
+      </div>
+      <div class="account-stats">
+        <div class="account-stat">
+          <div class="account-stat-value">${fmt(acct.followers)}</div>
+          <div class="account-stat-label">Followers</div>
+          ${delta(acct.followers_delta_24h)}
+        </div>
+        <div class="account-stat">
+          <div class="account-stat-value">${fmt(acct.posts_total)}</div>
+          <div class="account-stat-label">Posts</div>
+        </div>
+        <div class="account-stat">
+          <div class="account-stat-value">${fmt(acct.threads_total)}</div>
+          <div class="account-stat-label">Threads</div>
+        </div>
+        <div class="account-stat">
+          <div class="account-stat-value">${fmtPct(acct.avg_engagement_rate)}</div>
+          <div class="account-stat-label">Engage</div>
+        </div>
+      </div>
+      <div class="account-footer">
+        <span>Today: <span>${acct.posts_today || 0} posts</span></span>
+        <span>Top: <span>${acct.top_post_likes || 0} likes</span></span>
+        <span>Queue: <span>${acct.drafts_queued || 0} drafts</span></span>
+      </div>
+    </div>`;
+  }
+
+  // Load data
+  fetch('stats.json')
+    .then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(render)
+    .catch(err => {
+      $('#content').innerHTML = `<div class="error">
+        <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">Telemetry Unavailable</div>
+        <div style="color: var(--text-dim);">Data feed offline. Stats will appear when the system pushes its first update.</div>
+      </div>`;
+    });
+
+  // Auto-refresh every 5 minutes
+  setInterval(() => {
+    fetch('stats.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (data) render(data); })
+      .catch(() => {});
+  }, 300000);
+})();
+</script>
+
+</body>
+</html>
