@@ -10,20 +10,25 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0a0a0c;
-  --bg-card: #111115;
-  --bg-card-hover: #16161b;
-  --border: #1e1e25;
-  --border-bright: #2a2a35;
-  --text: #c8c8d0;
-  --text-dim: #6a6a78;
+  --bg: #08080b;
+  --bg-raised: #0e0e13;
+  --bg-card: #111116;
+  --bg-card-hover: #15151b;
+  --bg-bar: #1a1a22;
+  --border: #1c1c25;
+  --border-bright: #282835;
+  --text: #b8b8c4;
+  --text-dim: #5a5a6a;
   --text-bright: #eaeaf0;
   --accent: #00e5a0;
-  --accent-dim: #00e5a033;
-  --accent-glow: #00e5a018;
+  --accent-dim: rgba(0, 229, 160, 0.15);
+  --accent-faint: rgba(0, 229, 160, 0.06);
   --red: #ff4d6a;
   --amber: #ffb347;
-  --blue: #4d9fff;
+  --blue: #4da3ff;
+  --purple: #c084fc;
+  --pink: #f472b6;
+  --orange: #fb923c;
   --mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
   --sans: 'Space Grotesk', system-ui, sans-serif;
 }
@@ -32,51 +37,43 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--mono);
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* Scanline overlay */
+/* Scanline */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 0, 0, 0.03) 2px,
-    rgba(0, 0, 0, 0.03) 4px
-  );
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.025) 2px, rgba(0,0,0,0.025) 4px);
   pointer-events: none;
   z-index: 9999;
 }
 
-/* Subtle grid background */
+/* Grid bg */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 60px 60px;
-  opacity: 0.15;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.1;
   pointer-events: none;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 40px 24px;
+  padding: 40px 32px 80px;
   position: relative;
 }
 
-/* Header */
+/* === HEADER === */
 .header {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
   padding-bottom: 32px;
   border-bottom: 1px solid var(--border);
 }
@@ -85,7 +82,7 @@ body::before {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .status-dot {
@@ -93,14 +90,11 @@ body::before {
   height: 8px;
   background: var(--accent);
   border-radius: 50%;
-  box-shadow: 0 0 8px var(--accent), 0 0 20px var(--accent-dim);
+  box-shadow: 0 0 8px var(--accent), 0 0 24px var(--accent-dim);
   animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
 
 .header-label {
   font-size: 11px;
@@ -112,35 +106,32 @@ body::before {
 
 h1 {
   font-family: var(--sans);
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   color: var(--text-bright);
-  letter-spacing: -0.5px;
-  margin-bottom: 6px;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
 }
 
 .subtitle {
   color: var(--text-dim);
   font-size: 12px;
 }
+.subtitle span { color: var(--text); }
 
-.subtitle span {
-  color: var(--text);
-}
-
-/* Section headers */
+/* === SECTION HEADERS === */
 .section-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  margin-top: 48px;
+  gap: 12px;
+  margin: 56px 0 24px;
 }
 
 .section-header::before {
   content: '//';
   color: var(--accent);
   font-weight: 700;
+  font-size: 14px;
 }
 
 .section-title {
@@ -158,109 +149,299 @@ h1 {
   background: linear-gradient(90deg, var(--border-bright), transparent);
 }
 
-/* Stat cards grid */
-.stats-grid {
+/* === HERO STATS (top 3 big numbers) === */
+.hero-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.hero-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-dim), transparent);
+}
+
+.hero-label {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+
+.hero-value {
+  font-family: var(--sans);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.hero-sub {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 8px;
+}
+.hero-sub span { color: var(--text); }
+
+/* === SECONDARY STATS (smaller row) === */
+.secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 12px;
+  margin-top: 16px;
 }
 
 .stat-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 20px 18px;
-  transition: all 0.2s ease;
-  position: relative;
-  overflow: hidden;
+  padding: 18px 16px;
+  transition: border-color 0.2s;
 }
 
-.stat-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent-dim), transparent);
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.stat-card:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--border-bright);
-}
-
-.stat-card:hover::before {
-  opacity: 1;
-}
+.stat-card:hover { border-color: var(--border-bright); }
 
 .stat-label {
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--text-dim);
-  margin-bottom: 8px;
-  font-weight: 400;
+  margin-bottom: 6px;
 }
 
 .stat-value {
   font-family: var(--sans);
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
   color: var(--text-bright);
   line-height: 1;
-  letter-spacing: -1px;
-}
-
-.stat-value.accent {
-  color: var(--accent);
+  letter-spacing: -0.5px;
 }
 
 .stat-suffix {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   color: var(--text-dim);
   margin-left: 2px;
 }
 
-.stat-detail {
-  font-size: 11px;
-  color: var(--text-dim);
-  margin-top: 6px;
+/* === BAR CHART (posts distribution) === */
+.chart-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
 }
 
-.stat-detail .up { color: var(--accent); }
-.stat-detail .down { color: var(--red); }
-.stat-detail .neutral { color: var(--amber); }
+.chart-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+}
 
-/* Account cards */
+.chart-title {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 20px;
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar-label {
+  width: 90px;
+  font-size: 11px;
+  color: var(--text);
+  text-align: right;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar-track {
+  flex: 1;
+  height: 20px;
+  background: var(--bg-bar);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+}
+
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255,255,255,0.3);
+}
+
+.bar-value {
+  width: 50px;
+  font-size: 12px;
+  color: var(--text-bright);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+/* Donut chart */
+.donut-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.donut-svg {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legend-label { color: var(--text); flex: 1; }
+.legend-value { color: var(--text-bright); font-weight: 500; }
+
+/* === ENGAGEMENT RATE GAUGE === */
+.gauge-strip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.gauge-info { flex-shrink: 0; }
+.gauge-big {
+  font-family: var(--sans);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.gauge-label-text {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.gauge-track {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-bar);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gauge-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent), #00c896);
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 0 10px var(--accent-dim);
+}
+
+.gauge-marks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 9px;
+  color: var(--text-dim);
+}
+
+.gauge-right { flex-shrink: 0; text-align: right; }
+.gauge-detail {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+.gauge-detail span { color: var(--text); }
+
+/* === ACCOUNT CARDS === */
 .accounts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 16px;
 }
 
 .account-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 22px 20px;
-  transition: all 0.2s ease;
-  position: relative;
+  border-radius: 8px;
+  padding: 24px;
+  transition: border-color 0.2s;
 }
 
-.account-card:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--border-bright);
-}
+.account-card:hover { border-color: var(--border-bright); }
 
 .account-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .account-name {
@@ -280,29 +461,59 @@ h1 {
   border: 1px solid;
 }
 
-.niche-badge.uplifting { color: #00e5a0; border-color: #00e5a044; background: #00e5a00a; }
-.niche-badge.finance { color: #4d9fff; border-color: #4d9fff44; background: #4d9fff0a; }
-.niche-badge.intern { color: #ffb347; border-color: #ffb34744; background: #ffb3470a; }
-.niche-badge.ai { color: #c084fc; border-color: #c084fc44; background: #c084fc0a; }
-.niche-badge.geopolitics { color: #f472b6; border-color: #f472b644; background: #f472b60a; }
-.niche-badge.degen { color: #fb923c; border-color: #fb923c44; background: #fb923c0a; }
+.niche-badge.uplifting  { color: #00e5a0; border-color: #00e5a044; background: #00e5a00a; }
+.niche-badge.finance    { color: #4da3ff; border-color: #4da3ff44; background: #4da3ff0a; }
+.niche-badge.intern     { color: #ffb347; border-color: #ffb34744; background: #ffb3470a; }
+.niche-badge.ai         { color: #c084fc; border-color: #c084fc44; background: #c084fc0a; }
+.niche-badge.geopolitics{ color: #f472b6; border-color: #f472b644; background: #f472b60a; }
+.niche-badge.degen      { color: #fb923c; border-color: #fb923c44; background: #fb923c0a; }
 
-.account-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+/* Mini bar inside account card */
+.account-mini-bar {
+  margin: 16px 0;
 }
 
-.account-stat {
+.account-mini-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.account-mini-track {
+  height: 4px;
+  background: var(--bg-bar);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.account-mini-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.6s ease;
+}
+
+/* Account stat row */
+.account-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.account-stat-cell {
   text-align: center;
-  padding: 10px 4px;
+  padding: 12px 8px;
   background: rgba(255,255,255,0.015);
   border-radius: 4px;
 }
 
 .account-stat-value {
   font-family: var(--sans);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--text-bright);
   line-height: 1;
@@ -313,32 +524,30 @@ h1 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--text-dim);
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .account-stat-delta {
   font-size: 10px;
   margin-top: 3px;
 }
-
 .account-stat-delta.positive { color: var(--accent); }
 .account-stat-delta.negative { color: var(--red); }
 
 .account-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 14px;
-  padding-top: 12px;
+  margin-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--border);
   font-size: 11px;
   color: var(--text-dim);
 }
-
 .account-footer span { color: var(--text); }
 
-/* Footer */
+/* === FOOTER === */
 .footer {
-  margin-top: 64px;
+  margin-top: 72px;
   padding-top: 24px;
   border-top: 1px solid var(--border);
   display: flex;
@@ -356,10 +565,10 @@ h1 {
   opacity: 0.6;
 }
 
-/* Loading state */
+/* Loading / Error */
 .loading {
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
   color: var(--text-dim);
 }
 
@@ -382,34 +591,38 @@ h1 {
   animation: load 1.2s ease-in-out infinite;
 }
 
-@keyframes load {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(350%); }
-}
+@keyframes load { 0% { transform: translateX(-100%); } 100% { transform: translateX(350%); } }
 
-/* Error state */
 .error {
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
   color: var(--red);
   font-size: 12px;
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .chart-section { grid-template-columns: 1fr; }
+  .gauge-strip { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .gauge-track { width: 100%; }
+  .gauge-right { display: none; }
+}
+
 @media (max-width: 768px) {
-  .container { padding: 24px 16px; }
-  h1 { font-size: 22px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .container { padding: 24px 16px 60px; }
+  h1 { font-size: 24px; }
+  .hero-value { font-size: 36px; }
+  .secondary-grid { grid-template-columns: repeat(2, 1fr); }
   .accounts-grid { grid-template-columns: 1fr; }
-  .account-stats { grid-template-columns: repeat(2, 1fr); }
-  .stat-value { font-size: 26px; }
   .footer { flex-direction: column; gap: 8px; text-align: center; }
+  .donut-container { flex-direction: column; align-items: center; }
 }
 
 @media (max-width: 480px) {
-  .stats-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .stat-card { padding: 14px 12px; }
-  .stat-value { font-size: 22px; }
+  .secondary-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .hero-value { font-size: 30px; }
+  .account-stat-row { grid-template-columns: repeat(3, 1fr); }
 }
 </style>
 </head>
@@ -422,12 +635,12 @@ h1 {
       <span class="header-label">System Online</span>
     </div>
     <h1>Autonomous Social Media System</h1>
-    <div class="subtitle">Live telemetry from an AI-powered content engine &middot; Updated <span id="updated-time">—</span></div>
+    <div class="subtitle">Live telemetry from an AI-powered content engine &middot; Updated <span id="updated-time">&mdash;</span></div>
   </header>
 
   <div id="content">
     <div class="loading">
-      <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase;">Loading telemetry</div>
+      <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;">Loading telemetry</div>
       <div class="loading-bar"></div>
     </div>
   </div>
@@ -436,38 +649,36 @@ h1 {
 <script>
 (function() {
   const $ = (s, el) => (el || document).querySelector(s);
-  const $$ = (s, el) => [...(el || document).querySelectorAll(s)];
+
+  const NICHE_COLORS = {
+    uplifting: '#00e5a0', finance: '#4da3ff', intern: '#ffb347',
+    ai: '#c084fc', geopolitics: '#f472b6', degen: '#fb923c'
+  };
 
   function fmt(n) {
-    if (n == null) return '—';
+    if (n == null) return '\u2014';
     if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
     if (n >= 10000) return (n / 1000).toFixed(1) + 'k';
     if (n >= 1000) return n.toLocaleString();
     return String(n);
   }
 
-  function fmtPct(n) {
-    if (n == null) return '—';
-    return n.toFixed(1) + '%';
-  }
+  function fmtPct(n) { return n == null ? '\u2014' : n.toFixed(1) + '%'; }
 
   function delta(n) {
     if (n == null || n === 0) return '';
     const cls = n > 0 ? 'positive' : 'negative';
-    const sign = n > 0 ? '+' : '';
-    return `<span class="account-stat-delta ${cls}">${sign}${n}</span>`;
+    return `<span class="account-stat-delta ${cls}">${n > 0 ? '+' : ''}${n}</span>`;
   }
 
   function timeAgo(iso) {
-    if (!iso) return '—';
-    const diff = Date.now() - new Date(iso).getTime();
-    const mins = Math.floor(diff / 60000);
+    if (!iso) return '\u2014';
+    const mins = Math.floor((Date.now() - new Date(iso).getTime()) / 60000);
     if (mins < 1) return 'just now';
     if (mins < 60) return mins + 'm ago';
     const hrs = Math.floor(mins / 60);
     if (hrs < 24) return hrs + 'h ago';
-    const days = Math.floor(hrs / 24);
-    return days + 'd ago';
+    return Math.floor(hrs / 24) + 'd ago';
   }
 
   function nicheClass(niche) {
@@ -481,6 +692,58 @@ h1 {
     return '';
   }
 
+  function nicheColor(niche) {
+    return NICHE_COLORS[nicheClass(niche)] || '#888';
+  }
+
+  // === DONUT CHART SVG ===
+  function donutSVG(accounts) {
+    const total = accounts.reduce((s, a) => s + (a.posts_total || 0), 0);
+    if (total === 0) return '<div style="color:var(--text-dim);font-size:12px;text-align:center;padding:40px;">No post data yet</div>';
+
+    const radius = 52, cx = 70, cy = 70, stroke = 16;
+    const circ = 2 * Math.PI * radius;
+    let offset = 0;
+    let paths = '';
+
+    for (const a of accounts) {
+      const pct = (a.posts_total || 0) / total;
+      if (pct === 0) continue;
+      const dash = circ * pct;
+      const color = nicheColor(a.niche);
+      paths += `<circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${color}" stroke-width="${stroke}" stroke-dasharray="${dash} ${circ - dash}" stroke-dashoffset="${-offset}" opacity="0.85"/>`;
+      offset += dash;
+    }
+
+    const legend = accounts.filter(a => a.posts_total > 0).map(a => {
+      const pct = ((a.posts_total / total) * 100).toFixed(0);
+      return `<div class="legend-item"><div class="legend-dot" style="background:${nicheColor(a.niche)}"></div><span class="legend-label">${a.niche}</span><span class="legend-value">${fmt(a.posts_total)} (${pct}%)</span></div>`;
+    }).join('');
+
+    return `<div class="donut-container">
+      <svg class="donut-svg" viewBox="0 0 140 140" style="transform:rotate(-90deg)">
+        <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="var(--bg-bar)" stroke-width="${stroke}"/>
+        ${paths}
+      </svg>
+      <div class="donut-legend">${legend}</div>
+    </div>`;
+  }
+
+  // === HORIZONTAL BAR CHART ===
+  function barChart(items, colorFn) {
+    const max = Math.max(...items.map(i => i.value), 1);
+    return '<div class="bar-chart">' + items.map(item => {
+      const pct = Math.max((item.value / max) * 100, 2);
+      const color = colorFn ? colorFn(item) : 'var(--accent)';
+      return `<div class="bar-row">
+        <div class="bar-label">${item.label}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${color}"></div></div>
+        <div class="bar-value">${fmt(item.value)}</div>
+      </div>`;
+    }).join('') + '</div>';
+  }
+
+  // === RENDER ===
   function render(data) {
     const a = data.aggregate || {};
     const accounts = data.accounts || [];
@@ -489,30 +752,81 @@ h1 {
 
     let html = '';
 
-    // Aggregate stats
-    html += '<div class="section-header"><span class="section-title">System Overview</span></div>';
-    html += '<div class="stats-grid">';
-    html += card('Accounts', a.total_accounts, '');
-    html += card('Total Followers', fmt(a.total_followers), '', true);
-    html += card('Total Posts', fmt(a.total_posts), '');
-    html += card('Threads', fmt(a.total_threads), '');
-    html += card('Posts Today', fmt(a.posts_today), '');
-    html += card('This Week', fmt(a.posts_this_week), '');
-    html += card('Engagement', fmt(a.total_engagement_actions), '');
-    html += card('Avg Engage Rate', fmtPct(a.avg_engagement_rate), '', true);
-    html += card('Drafts Queued', fmt(a.drafts_in_queue), '');
-    html += card('Uptime', fmt(a.system_uptime_hours), 'h');
+    // ---- HERO: 3 big numbers ----
+    html += '<div class="hero-grid">';
+    html += `<div class="hero-card">
+      <div class="hero-label">Total Followers</div>
+      <div class="hero-value">${fmt(a.total_followers)}</div>
+      <div class="hero-sub">across <span>${a.total_accounts || 0}</span> accounts</div>
+    </div>`;
+    html += `<div class="hero-card">
+      <div class="hero-label">Total Posts</div>
+      <div class="hero-value">${fmt(a.total_posts)}</div>
+      <div class="hero-sub"><span>${fmt(a.total_threads)}</span> threads included</div>
+    </div>`;
+    html += `<div class="hero-card">
+      <div class="hero-label">Engagement Actions</div>
+      <div class="hero-value">${fmt(a.total_engagement_actions)}</div>
+      <div class="hero-sub">likes + retweets + replies + bookmarks</div>
+    </div>`;
     html += '</div>';
 
-    // Per-account
+    // ---- SECONDARY ROW ----
+    html += '<div class="secondary-grid">';
+    html += statCard('Posts Today', fmt(a.posts_today));
+    html += statCard('This Week', fmt(a.posts_this_week));
+    html += statCard('Drafts Queued', fmt(a.drafts_in_queue));
+    html += statCard('Uptime', fmt(a.system_uptime_hours) + '<span class="stat-suffix">h</span>');
+    html += '</div>';
+
+    // ---- ENGAGEMENT RATE GAUGE ----
+    const rate = a.avg_engagement_rate || 0;
+    const gaugeMax = 20;
+    const gaugePct = Math.min((rate / gaugeMax) * 100, 100);
+    html += `<div class="gauge-strip">
+      <div class="gauge-info">
+        <div class="gauge-label-text">Avg Engagement Rate</div>
+        <div class="gauge-big">${fmtPct(rate)}</div>
+      </div>
+      <div style="flex:1">
+        <div class="gauge-track"><div class="gauge-fill" style="width:${gaugePct}%"></div></div>
+        <div class="gauge-marks"><span>0%</span><span>5%</span><span>10%</span><span>15%</span><span>20%+</span></div>
+      </div>
+      <div class="gauge-right">
+        <div class="gauge-detail">Total actions: <span>${fmt(a.total_engagement_actions)}</span></div>
+      </div>
+    </div>`;
+
+    // ---- CHARTS SECTION ----
+    html += '<div class="section-header"><span class="section-title">Distribution</span></div>';
+    html += '<div class="chart-section">';
+
+    // Bar chart: followers per account
+    html += '<div class="chart-panel">';
+    html += '<div class="chart-title">Followers by Account</div>';
+    html += barChart(
+      accounts.map(ac => ({ label: ac.niche, value: ac.followers || 0, niche: ac.niche })),
+      item => nicheColor(item.niche)
+    );
+    html += '</div>';
+
+    // Donut: post distribution
+    html += '<div class="chart-panel">';
+    html += '<div class="chart-title">Post Distribution by Niche</div>';
+    html += donutSVG(accounts);
+    html += '</div>';
+
+    html += '</div>'; // chart-section
+
+    // ---- PER-ACCOUNT TELEMETRY ----
     html += '<div class="section-header"><span class="section-title">Per-Account Telemetry</span></div>';
     html += '<div class="accounts-grid">';
     for (const acct of accounts) {
-      html += accountCard(acct);
+      html += accountCard(acct, a);
     }
     html += '</div>';
 
-    // Footer
+    // ---- FOOTER ----
     html += '<footer class="footer">';
     html += '<div class="footer-left"><div class="footer-dot"></div>Fully autonomous &middot; No human intervention</div>';
     html += '<div>AI agents &middot; LLM content &middot; Self-healing infrastructure</div>';
@@ -521,39 +835,63 @@ h1 {
     $('#content').innerHTML = html;
   }
 
-  function card(label, value, suffix, accent) {
-    return `<div class="stat-card">
-      <div class="stat-label">${label}</div>
-      <div class="stat-value${accent ? ' accent' : ''}">${value}${suffix ? `<span class="stat-suffix">${suffix}</span>` : ''}</div>
-    </div>`;
+  function statCard(label, valueHtml) {
+    return `<div class="stat-card"><div class="stat-label">${label}</div><div class="stat-value">${valueHtml}</div></div>`;
   }
 
-  function accountCard(acct) {
+  function accountCard(acct, agg) {
     const nc = nicheClass(acct.niche);
+    const color = nicheColor(acct.niche);
+
+    // Mini bar: this account's posts as % of total
+    const totalPosts = agg.total_posts || 1;
+    const postPct = Math.max(((acct.posts_total || 0) / totalPosts) * 100, 2);
+
+    // Engagement rate bar (out of 20%)
+    const engPct = Math.min(((acct.avg_engagement_rate || 0) / 20) * 100, 100);
+
     return `<div class="account-card">
       <div class="account-header">
         <span class="account-name">${acct.label}</span>
         <span class="niche-badge ${nc}">${acct.niche}</span>
       </div>
-      <div class="account-stats">
-        <div class="account-stat">
+
+      <div class="account-stat-row">
+        <div class="account-stat-cell">
           <div class="account-stat-value">${fmt(acct.followers)}</div>
           <div class="account-stat-label">Followers</div>
           ${delta(acct.followers_delta_24h)}
         </div>
-        <div class="account-stat">
+        <div class="account-stat-cell">
           <div class="account-stat-value">${fmt(acct.posts_total)}</div>
           <div class="account-stat-label">Posts</div>
         </div>
-        <div class="account-stat">
+        <div class="account-stat-cell">
           <div class="account-stat-value">${fmt(acct.threads_total)}</div>
           <div class="account-stat-label">Threads</div>
         </div>
-        <div class="account-stat">
-          <div class="account-stat-value">${fmtPct(acct.avg_engagement_rate)}</div>
-          <div class="account-stat-label">Engage</div>
+      </div>
+
+      <div class="account-mini-bar">
+        <div class="account-mini-bar-label">
+          <span>Engagement Rate</span>
+          <span style="color:var(--text-bright)">${fmtPct(acct.avg_engagement_rate)}</span>
+        </div>
+        <div class="account-mini-track">
+          <div class="account-mini-fill" style="width:${engPct}%;background:${color}"></div>
         </div>
       </div>
+
+      <div class="account-mini-bar" style="margin-top:10px">
+        <div class="account-mini-bar-label">
+          <span>Share of Output</span>
+          <span style="color:var(--text-bright)">${((acct.posts_total || 0) / totalPosts * 100).toFixed(0)}%</span>
+        </div>
+        <div class="account-mini-track">
+          <div class="account-mini-fill" style="width:${postPct}%;background:${color};opacity:0.6"></div>
+        </div>
+      </div>
+
       <div class="account-footer">
         <span>Today: <span>${acct.posts_today || 0} posts</span></span>
         <span>Top: <span>${acct.top_post_likes || 0} likes</span></span>
@@ -562,26 +900,19 @@ h1 {
     </div>`;
   }
 
-  // Load data
+  // Load + auto-refresh
   fetch('stats.json')
-    .then(r => {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
-    })
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(render)
-    .catch(err => {
+    .catch(() => {
       $('#content').innerHTML = `<div class="error">
-        <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">Telemetry Unavailable</div>
-        <div style="color: var(--text-dim);">Data feed offline. Stats will appear when the system pushes its first update.</div>
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Telemetry Unavailable</div>
+        <div style="color:var(--text-dim);">Data feed offline. Stats will appear when the system pushes its first update.</div>
       </div>`;
     });
 
-  // Auto-refresh every 5 minutes
   setInterval(() => {
-    fetch('stats.json')
-      .then(r => r.ok ? r.json() : null)
-      .then(data => { if (data) render(data); })
-      .catch(() => {});
+    fetch('stats.json').then(r => r.ok ? r.json() : null).then(d => { if (d) render(d); }).catch(() => {});
   }, 300000);
 })();
 </script>
