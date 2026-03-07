@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-03-07T20:45:39.228124+00:00",
+  "generated_at": "2026-03-07T20:56:40.228149+00:00",
   "aggregate": {
     "total_accounts": 8,
     "total_followers": 204,
-    "total_posts": 1401,
+    "total_posts": 1403,
     "total_threads": 1030,
-    "total_engagement_actions": 741,
-    "avg_engagement_rate": 20.0,
-    "posts_today": 469,
-    "posts_this_week": 1401,
+    "total_engagement_actions": 752,
+    "avg_engagement_rate": 19.8,
+    "posts_today": 471,
+    "posts_this_week": 1403,
     "system_uptime_hours": 109,
-    "drafts_in_queue": 74
+    "drafts_in_queue": 70
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 95,
-      "followers_delta_24h": 33,
-      "posts_total": 110,
-      "posts_today": 41,
+      "followers_delta_24h": 28,
+      "posts_total": 111,
+      "posts_today": 42,
       "threads_total": 31,
       "avg_engagement_rate": 3.2,
       "top_post_likes": 2,
@@ -35,7 +35,7 @@
       "threads_total": 5,
       "avg_engagement_rate": 32.6,
       "top_post_likes": 4,
-      "drafts_queued": 10
+      "drafts_queued": 1
     },
     {
       "label": "Account 3",
@@ -59,7 +59,7 @@
       "threads_total": 54,
       "avg_engagement_rate": 14.3,
       "top_post_likes": 1,
-      "drafts_queued": 16
+      "drafts_queued": 18
     },
     {
       "label": "Account 5",
@@ -71,17 +71,17 @@
       "threads_total": 11,
       "avg_engagement_rate": 13.1,
       "top_post_likes": 2,
-      "drafts_queued": 9
+      "drafts_queued": 6
     },
     {
       "label": "Account 6",
       "niche": "Intern",
       "followers": 6,
       "followers_delta_24h": 1,
-      "posts_total": 141,
-      "posts_today": 79,
+      "posts_total": 142,
+      "posts_today": 80,
       "threads_total": 18,
-      "avg_engagement_rate": 35.7,
+      "avg_engagement_rate": 34.5,
       "top_post_likes": 1,
       "drafts_queued": 5
     },
@@ -95,7 +95,7 @@
       "threads_total": 0,
       "avg_engagement_rate": 39.7,
       "top_post_likes": 3,
-      "drafts_queued": 8
+      "drafts_queued": 5
     },
     {
       "label": "Account 8",
@@ -107,7 +107,7 @@
       "threads_total": 49,
       "avg_engagement_rate": 4.6,
       "top_post_likes": 1,
-      "drafts_queued": 24
+      "drafts_queued": 33
     }
   ]
 }
