@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-07T20:24:23.799356+00:00",
+  "generated_at": "2026-03-07T20:32:19.466883+00:00",
   "aggregate": {
     "total_accounts": 8,
     "total_followers": 203,
@@ -10,7 +10,7 @@
     "posts_today": 467,
     "posts_this_week": 1399,
     "system_uptime_hours": 109,
-    "drafts_in_queue": 86
+    "drafts_in_queue": 73
   },
   "accounts": [
     {
@@ -83,7 +83,7 @@
       "threads_total": 18,
       "avg_engagement_rate": 35.7,
       "top_post_likes": 1,
-      "drafts_queued": 21
+      "drafts_queued": 0
     },
     {
       "label": "Account 7",
@@ -107,7 +107,7 @@
       "threads_total": 49,
       "avg_engagement_rate": 4.6,
       "top_post_likes": 1,
-      "drafts_queued": 11
+      "drafts_queued": 19
     }
   ]
 }
