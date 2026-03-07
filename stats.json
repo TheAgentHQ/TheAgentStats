@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-03-07T04:34:56.213326+00:00",
+  "generated_at": "2026-03-07T04:43:32.355751+00:00",
   "aggregate": {
     "total_accounts": 8,
     "total_followers": 141,
-    "total_posts": 1064,
+    "total_posts": 1065,
     "total_threads": 751,
     "total_engagement_actions": 300,
     "avg_engagement_rate": 14.9,
-    "posts_today": 132,
-    "posts_this_week": 1064,
+    "posts_today": 133,
+    "posts_this_week": 1065,
     "system_uptime_hours": 93,
-    "drafts_in_queue": 727
+    "drafts_in_queue": 717
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 62,
-      "followers_delta_24h": 28,
+      "followers_delta_24h": 36,
       "posts_total": 79,
       "posts_today": 10,
       "threads_total": 25,
       "avg_engagement_rate": 1.5,
       "top_post_likes": 1,
-      "drafts_queued": 58
+      "drafts_queued": 57
     },
     {
       "label": "Account 2",
@@ -35,7 +35,7 @@
       "threads_total": 0,
       "avg_engagement_rate": 0.0,
       "top_post_likes": 0,
-      "drafts_queued": 92
+      "drafts_queued": 84
     },
     {
       "label": "Account 3",
@@ -47,7 +47,7 @@
       "threads_total": 11,
       "avg_engagement_rate": 24.1,
       "top_post_likes": 1,
-      "drafts_queued": 39
+      "drafts_queued": 38
     },
     {
       "label": "Account 4",
@@ -59,7 +59,7 @@
       "threads_total": 43,
       "avg_engagement_rate": 8.7,
       "top_post_likes": 1,
-      "drafts_queued": 170
+      "drafts_queued": 169
     },
     {
       "label": "Account 5",
@@ -71,7 +71,7 @@
       "threads_total": 3,
       "avg_engagement_rate": 8.6,
       "top_post_likes": 2,
-      "drafts_queued": 10
+      "drafts_queued": 9
     },
     {
       "label": "Account 6",
@@ -83,7 +83,7 @@
       "threads_total": 10,
       "avg_engagement_rate": 42.0,
       "top_post_likes": 1,
-      "drafts_queued": 206
+      "drafts_queued": 201
     },
     {
       "label": "Account 7",
@@ -95,19 +95,19 @@
       "threads_total": 0,
       "avg_engagement_rate": 0.0,
       "top_post_likes": 0,
-      "drafts_queued": 10
+      "drafts_queued": 9
     },
     {
       "label": "Account 8",
       "niche": "Uplifting",
       "followers": 25,
       "followers_delta_24h": 7,
-      "posts_total": 399,
-      "posts_today": 8,
+      "posts_total": 400,
+      "posts_today": 9,
       "threads_total": 41,
       "avg_engagement_rate": 4.3,
       "top_post_likes": 1,
-      "drafts_queued": 142
+      "drafts_queued": 150
     }
   ]
 }
