@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-07T03:25:05.325429+00:00",
+  "generated_at": "2026-03-07T03:43:01.065621+00:00",
   "aggregate": {
     "total_accounts": 7,
     "total_followers": 137,
-    "total_posts": 1033,
-    "total_threads": 722,
+    "total_posts": 1042,
+    "total_threads": 731,
     "total_engagement_actions": 298,
     "avg_engagement_rate": 14.9,
-    "posts_today": 101,
-    "posts_this_week": 1033,
+    "posts_today": 110,
+    "posts_this_week": 1042,
     "system_uptime_hours": 92,
-    "drafts_in_queue": 664
+    "drafts_in_queue": 673
   },
   "accounts": [
     {
@@ -23,7 +23,7 @@
       "threads_total": 25,
       "avg_engagement_rate": 1.4,
       "top_post_likes": 1,
-      "drafts_queued": 56
+      "drafts_queued": 57
     },
     {
       "label": "Account 2",
@@ -54,12 +54,12 @@
       "niche": "Finance",
       "followers": 22,
       "followers_delta_24h": 10,
-      "posts_total": 373,
-      "posts_today": 42,
-      "threads_total": 39,
+      "posts_total": 382,
+      "posts_today": 51,
+      "threads_total": 40,
       "avg_engagement_rate": 8.7,
       "top_post_likes": 1,
-      "drafts_queued": 174
+      "drafts_queued": 173
     },
     {
       "label": "Account 5",
@@ -77,13 +77,13 @@
       "label": "Account 6",
       "niche": "Intern",
       "followers": 5,
-      "followers_delta_24h": 5,
+      "followers_delta_24h": 4,
       "posts_total": 82,
       "posts_today": 20,
       "threads_total": 10,
       "avg_engagement_rate": 42.0,
       "top_post_likes": 1,
-      "drafts_queued": 187
+      "drafts_queued": 196
     },
     {
       "label": "Account 7",
