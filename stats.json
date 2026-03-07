@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-03-07T04:24:11.044840+00:00",
+  "generated_at": "2026-03-07T04:34:56.213326+00:00",
   "aggregate": {
     "total_accounts": 8,
     "total_followers": 141,
-    "total_posts": 1056,
-    "total_threads": 743,
+    "total_posts": 1064,
+    "total_threads": 751,
     "total_engagement_actions": 300,
     "avg_engagement_rate": 14.9,
-    "posts_today": 124,
-    "posts_this_week": 1056,
+    "posts_today": 132,
+    "posts_this_week": 1064,
     "system_uptime_hours": 93,
-    "drafts_in_queue": 708
+    "drafts_in_queue": 727
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 62,
-      "followers_delta_24h": 36,
+      "followers_delta_24h": 28,
       "posts_total": 79,
       "posts_today": 10,
       "threads_total": 25,
@@ -54,9 +54,9 @@
       "niche": "Finance",
       "followers": 23,
       "followers_delta_24h": 11,
-      "posts_total": 393,
-      "posts_today": 62,
-      "threads_total": 42,
+      "posts_total": 401,
+      "posts_today": 70,
+      "threads_total": 43,
       "avg_engagement_rate": 8.7,
       "top_post_likes": 1,
       "drafts_queued": 170
@@ -95,19 +95,19 @@
       "threads_total": 0,
       "avg_engagement_rate": 0.0,
       "top_post_likes": 0,
-      "drafts_queued": 0
+      "drafts_queued": 10
     },
     {
       "label": "Account 8",
       "niche": "Uplifting",
       "followers": 25,
-      "followers_delta_24h": 6,
+      "followers_delta_24h": 7,
       "posts_total": 399,
       "posts_today": 8,
       "threads_total": 41,
       "avg_engagement_rate": 4.3,
       "top_post_likes": 1,
-      "drafts_queued": 133
+      "drafts_queued": 142
     }
   ]
 }
