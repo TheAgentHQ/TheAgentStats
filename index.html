@@ -843,9 +843,9 @@ h1 {
       // YouTube hero stats
       html += '<div class="secondary-grid">';
       html += statCard('Channels', fmt(yt.total_channels));
-      html += statCard('Videos Uploaded', fmt(yt.total_videos));
+      html += statCard('Subscribers', fmt(yt.total_subscribers));
+      html += statCard('Videos', fmt(yt.total_videos));
       html += statCard('Total Views', fmt(yt.total_views));
-      html += statCard('Total Likes', fmt(yt.total_likes));
       html += '</div>';
 
       // YouTube channel cards
@@ -938,20 +938,20 @@ h1 {
       </div>
       <div class="account-stat-row">
         <div class="account-stat-cell">
-          <div class="account-stat-value">${fmt(ch.videos_uploaded)}</div>
-          <div class="account-stat-label">Uploaded</div>
+          <div class="account-stat-value">${fmt(ch.subscribers)}</div>
+          <div class="account-stat-label">Subscribers</div>
+        </div>
+        <div class="account-stat-cell">
+          <div class="account-stat-value">${fmt(ch.videos_total)}</div>
+          <div class="account-stat-label">Videos</div>
         </div>
         <div class="account-stat-cell">
           <div class="account-stat-value">${fmt(ch.total_views)}</div>
           <div class="account-stat-label">Views</div>
         </div>
-        <div class="account-stat-cell">
-          <div class="account-stat-value">${fmt(ch.total_likes)}</div>
-          <div class="account-stat-label">Likes</div>
-        </div>
       </div>
       <div class="account-footer">
-        <span>Today: <span>${ch.videos_today || 0} videos</span></span>
+        <span>Today: <span>${ch.videos_today || 0} new</span></span>
         <span>Ready: <span>${ch.videos_ready || 0} queued</span></span>
       </div>
     </div>`;
