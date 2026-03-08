@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-08T00:09:25.425020+00:00",
+  "generated_at": "2026-03-08T00:18:57.744902+00:00",
   "aggregate": {
     "total_accounts": 8,
     "total_followers": 215,
@@ -9,8 +9,8 @@
     "avg_engagement_rate": 20.6,
     "posts_today": 4,
     "posts_this_week": 1489,
-    "system_uptime_hours": 112,
-    "drafts_in_queue": 368
+    "system_uptime_hours": 113,
+    "drafts_in_queue": 0
   },
   "accounts": [
     {
@@ -23,7 +23,7 @@
       "threads_total": 32,
       "avg_engagement_rate": 3.3,
       "top_post_likes": 2,
-      "drafts_queued": 15
+      "drafts_queued": 0
     },
     {
       "label": "Account 2",
@@ -35,7 +35,7 @@
       "threads_total": 5,
       "avg_engagement_rate": 32.6,
       "top_post_likes": 4,
-      "drafts_queued": 76
+      "drafts_queued": 0
     },
     {
       "label": "Account 3",
@@ -47,7 +47,7 @@
       "threads_total": 16,
       "avg_engagement_rate": 15.2,
       "top_post_likes": 1,
-      "drafts_queued": 59
+      "drafts_queued": 0
     },
     {
       "label": "Account 4",
@@ -59,7 +59,7 @@
       "threads_total": 61,
       "avg_engagement_rate": 15.1,
       "top_post_likes": 1,
-      "drafts_queued": 68
+      "drafts_queued": 0
     },
     {
       "label": "Account 5",
@@ -71,7 +71,7 @@
       "threads_total": 12,
       "avg_engagement_rate": 14.1,
       "top_post_likes": 2,
-      "drafts_queued": 37
+      "drafts_queued": 0
     },
     {
       "label": "Account 6",
@@ -83,7 +83,7 @@
       "threads_total": 19,
       "avg_engagement_rate": 33.9,
       "top_post_likes": 1,
-      "drafts_queued": 53
+      "drafts_queued": 0
     },
     {
       "label": "Account 7",
@@ -107,7 +107,7 @@
       "threads_total": 54,
       "avg_engagement_rate": 4.3,
       "top_post_likes": 1,
-      "drafts_queued": 60
+      "drafts_queued": 0
     }
   ]
 }
