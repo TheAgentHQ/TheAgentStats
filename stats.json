@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-08T22:10:30.318659+00:00",
+  "generated_at": "2026-03-08T22:13:30.294044+00:00",
   "aggregate": {
     "total_accounts": 9,
     "total_followers": 279,
-    "total_posts": 1927,
+    "total_posts": 1928,
     "total_threads": 1252,
     "total_engagement_actions": 1387,
     "avg_engagement_rate": 21.4,
-    "posts_today": 442,
-    "posts_this_week": 1927,
+    "posts_today": 443,
+    "posts_this_week": 1928,
     "system_uptime_hours": 134,
     "drafts_in_queue": 116
   },
@@ -102,8 +102,8 @@
       "niche": "Uplifting",
       "followers": 45,
       "followers_delta_24h": 9,
-      "posts_total": 539,
-      "posts_today": 57,
+      "posts_total": 540,
+      "posts_today": 58,
       "threads_total": 57,
       "avg_engagement_rate": 4.7,
       "top_post_likes": 2,
@@ -124,7 +124,7 @@
   ],
   "youtube": {
     "total_channels": 2,
-    "total_subscribers": 4,
+    "total_subscribers": 6,
     "total_videos": 10,
     "total_views": 1489,
     "channels": [
@@ -140,7 +140,7 @@
       {
         "label": "Channel 2",
         "niche": "Kids Animation",
-        "subscribers": 2,
+        "subscribers": 4,
         "videos_total": 1,
         "videos_ready": 0,
         "videos_today": 0,
