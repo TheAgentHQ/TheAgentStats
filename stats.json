@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-08T21:57:22.279633+00:00",
+  "generated_at": "2026-03-08T22:05:32.126134+00:00",
   "aggregate": {
     "total_accounts": 9,
     "total_followers": 279,
-    "total_posts": 1925,
+    "total_posts": 1926,
     "total_threads": 1252,
     "total_engagement_actions": 1387,
     "avg_engagement_rate": 21.4,
-    "posts_today": 440,
-    "posts_this_week": 1925,
+    "posts_today": 441,
+    "posts_this_week": 1926,
     "system_uptime_hours": 134,
-    "drafts_in_queue": 114
+    "drafts_in_queue": 107
   },
   "accounts": [
     {
@@ -29,7 +29,7 @@
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 26,
-      "followers_delta_24h": 12,
+      "followers_delta_24h": 11,
       "posts_total": 116,
       "posts_today": 55,
       "threads_total": 8,
@@ -102,8 +102,8 @@
       "niche": "Uplifting",
       "followers": 45,
       "followers_delta_24h": 9,
-      "posts_total": 538,
-      "posts_today": 56,
+      "posts_total": 539,
+      "posts_today": 57,
       "threads_total": 57,
       "avg_engagement_rate": 4.7,
       "top_post_likes": 2,
@@ -119,7 +119,7 @@
       "threads_total": 0,
       "avg_engagement_rate": 0.0,
       "top_post_likes": 0,
-      "drafts_queued": 7
+      "drafts_queued": 0
     }
   ],
   "youtube": {
