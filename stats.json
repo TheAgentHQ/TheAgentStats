@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-08T22:13:30.294044+00:00",
+  "generated_at": "2026-03-08T22:20:04.338602+00:00",
   "aggregate": {
     "total_accounts": 9,
     "total_followers": 279,
@@ -9,7 +9,7 @@
     "avg_engagement_rate": 21.4,
     "posts_today": 443,
     "posts_this_week": 1928,
-    "system_uptime_hours": 134,
+    "system_uptime_hours": 135,
     "drafts_in_queue": 116
   },
   "accounts": [
