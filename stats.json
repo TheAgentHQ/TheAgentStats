@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-08T22:05:32.126134+00:00",
+  "generated_at": "2026-03-08T22:10:30.318659+00:00",
   "aggregate": {
     "total_accounts": 9,
     "total_followers": 279,
-    "total_posts": 1926,
+    "total_posts": 1927,
     "total_threads": 1252,
     "total_engagement_actions": 1387,
     "avg_engagement_rate": 21.4,
-    "posts_today": 441,
-    "posts_this_week": 1926,
+    "posts_today": 442,
+    "posts_this_week": 1927,
     "system_uptime_hours": 134,
-    "drafts_in_queue": 107
+    "drafts_in_queue": 116
   },
   "accounts": [
     {
@@ -54,12 +54,12 @@
       "niche": "Finance",
       "followers": 32,
       "followers_delta_24h": 2,
-      "posts_total": 544,
-      "posts_today": 62,
+      "posts_total": 545,
+      "posts_today": 63,
       "threads_total": 71,
       "avg_engagement_rate": 13.9,
       "top_post_likes": 2,
-      "drafts_queued": 19
+      "drafts_queued": 28
     },
     {
       "label": "Account 5",
@@ -124,27 +124,27 @@
   ],
   "youtube": {
     "total_channels": 2,
-    "total_videos": 38,
-    "total_views": 1831,
-    "total_likes": 14,
+    "total_subscribers": 4,
+    "total_videos": 10,
+    "total_views": 1489,
     "channels": [
       {
         "label": "Channel 1",
         "niche": "General",
-        "videos_uploaded": 38,
+        "subscribers": 2,
+        "videos_total": 9,
         "videos_ready": 0,
         "videos_today": 5,
-        "total_views": 1831,
-        "total_likes": 14
+        "total_views": 1489
       },
       {
         "label": "Channel 2",
         "niche": "Kids Animation",
-        "videos_uploaded": 0,
+        "subscribers": 2,
+        "videos_total": 1,
         "videos_ready": 0,
         "videos_today": 0,
-        "total_views": 0,
-        "total_likes": 0
+        "total_views": 0
       }
     ]
   }
