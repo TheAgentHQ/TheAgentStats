@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-08T20:37:11.066701+00:00",
+  "generated_at": "2026-03-08T20:56:38.519389+00:00",
   "aggregate": {
-    "total_accounts": 8,
+    "total_accounts": 9,
     "total_followers": 274,
-    "total_posts": 1894,
+    "total_posts": 1897,
     "total_threads": 1240,
     "total_engagement_actions": 1360,
     "avg_engagement_rate": 21.8,
-    "posts_today": 409,
-    "posts_this_week": 1894,
+    "posts_today": 412,
+    "posts_this_week": 1897,
     "system_uptime_hours": 133,
-    "drafts_in_queue": 87
+    "drafts_in_queue": 96
   },
   "accounts": [
     {
@@ -18,8 +18,8 @@
       "niche": "AI & Automation",
       "followers": 109,
       "followers_delta_24h": 11,
-      "posts_total": 183,
-      "posts_today": 64,
+      "posts_total": 184,
+      "posts_today": 65,
       "threads_total": 43,
       "avg_engagement_rate": 4.8,
       "top_post_likes": 2,
@@ -54,8 +54,8 @@
       "niche": "Finance",
       "followers": 32,
       "followers_delta_24h": 2,
-      "posts_total": 539,
-      "posts_today": 57,
+      "posts_total": 540,
+      "posts_today": 58,
       "threads_total": 69,
       "avg_engagement_rate": 14.2,
       "top_post_likes": 2,
@@ -101,13 +101,25 @@
       "label": "Account 8",
       "niche": "Uplifting",
       "followers": 45,
-      "followers_delta_24h": 12,
-      "posts_total": 535,
-      "posts_today": 53,
+      "followers_delta_24h": 9,
+      "posts_total": 536,
+      "posts_today": 54,
       "threads_total": 57,
       "avg_engagement_rate": 4.7,
       "top_post_likes": 2,
-      "drafts_queued": 12
+      "drafts_queued": 21
+    },
+    {
+      "label": "Account 9",
+      "niche": "Video Curator",
+      "followers": 0,
+      "followers_delta_24h": null,
+      "posts_total": 0,
+      "posts_today": 0,
+      "threads_total": 0,
+      "avg_engagement_rate": 0.0,
+      "top_post_likes": 0,
+      "drafts_queued": 0
     }
   ]
 }
