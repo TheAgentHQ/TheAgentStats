@@ -467,6 +467,10 @@ h1 {
 .niche-badge.ai         { color: #c084fc; border-color: #c084fc44; background: #c084fc0a; }
 .niche-badge.geopolitics{ color: #f472b6; border-color: #f472b644; background: #f472b60a; }
 .niche-badge.degen      { color: #fb923c; border-color: #fb923c44; background: #fb923c0a; }
+.niche-badge.meme       { color: #facc15; border-color: #facc1544; background: #facc150a; }
+.niche-badge.manifest   { color: #a78bfa; border-color: #a78bfa44; background: #a78bfa0a; }
+.niche-badge.video      { color: #38bdf8; border-color: #38bdf844; background: #38bdf80a; }
+.niche-badge.youtube    { color: #ff4444; border-color: #ff444444; background: #ff44440a; }
 
 /* Mini bar inside account card */
 .account-mini-bar {
@@ -652,7 +656,8 @@ h1 {
 
   const NICHE_COLORS = {
     uplifting: '#00e5a0', finance: '#4da3ff', intern: '#ffb347',
-    ai: '#c084fc', geopolitics: '#f472b6', degen: '#fb923c'
+    ai: '#c084fc', geopolitics: '#f472b6', degen: '#fb923c',
+    meme: '#facc15', manifest: '#a78bfa', video: '#38bdf8', youtube: '#ff4444'
   };
 
   function fmt(n) {
@@ -688,7 +693,10 @@ h1 {
     if (n.includes('intern') || n.includes('corporate')) return 'intern';
     if (n.includes('ai') || n.includes('agent') || n.includes('auto')) return 'ai';
     if (n.includes('geo') || n.includes('politic')) return 'geopolitics';
-    if (n.includes('degen') || n.includes('crypto')) return 'degen';
+    if (n.includes('degen')) return 'degen';
+    if (n.includes('crypto') || n.includes('meme')) return 'meme';
+    if (n.includes('manifest') || n.includes('lyra') || n.includes('lumira')) return 'manifest';
+    if (n.includes('video') || n.includes('curator')) return 'video';
     return '';
   }
 
@@ -826,6 +834,28 @@ h1 {
     }
     html += '</div>';
 
+    // ---- YOUTUBE SECTION ----
+    const yt = data.youtube || {};
+    const ytChannels = yt.channels || [];
+    if (ytChannels.length > 0) {
+      html += '<div class="section-header"><span class="section-title">YouTube Shorts</span></div>';
+
+      // YouTube hero stats
+      html += '<div class="secondary-grid">';
+      html += statCard('Channels', fmt(yt.total_channels));
+      html += statCard('Videos Uploaded', fmt(yt.total_videos));
+      html += statCard('Total Views', fmt(yt.total_views));
+      html += statCard('Total Likes', fmt(yt.total_likes));
+      html += '</div>';
+
+      // YouTube channel cards
+      html += '<div class="accounts-grid" style="margin-top:16px">';
+      for (const ch of ytChannels) {
+        html += youtubeCard(ch);
+      }
+      html += '</div>';
+    }
+
     // ---- FOOTER ----
     html += '<footer class="footer">';
     html += '<div class="footer-left"><div class="footer-dot"></div>Fully autonomous &middot; No human intervention</div>';
@@ -896,6 +926,33 @@ h1 {
         <span>Today: <span>${acct.posts_today || 0} posts</span></span>
         <span>Top: <span>${acct.top_post_likes || 0} likes</span></span>
         <span>Queue: <span>${acct.drafts_queued || 0} drafts</span></span>
+      </div>
+    </div>`;
+  }
+
+  function youtubeCard(ch) {
+    return `<div class="account-card">
+      <div class="account-header">
+        <span class="account-name">${ch.label}</span>
+        <span class="niche-badge youtube">${ch.niche}</span>
+      </div>
+      <div class="account-stat-row">
+        <div class="account-stat-cell">
+          <div class="account-stat-value">${fmt(ch.videos_uploaded)}</div>
+          <div class="account-stat-label">Uploaded</div>
+        </div>
+        <div class="account-stat-cell">
+          <div class="account-stat-value">${fmt(ch.total_views)}</div>
+          <div class="account-stat-label">Views</div>
+        </div>
+        <div class="account-stat-cell">
+          <div class="account-stat-value">${fmt(ch.total_likes)}</div>
+          <div class="account-stat-label">Likes</div>
+        </div>
+      </div>
+      <div class="account-footer">
+        <span>Today: <span>${ch.videos_today || 0} videos</span></span>
+        <span>Ready: <span>${ch.videos_ready || 0} queued</span></span>
       </div>
     </div>`;
   }
