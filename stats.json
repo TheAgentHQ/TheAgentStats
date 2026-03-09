@@ -1,77 +1,77 @@
 {
-  "generated_at": "2026-03-09T00:04:00.780034+00:00",
+  "generated_at": "2026-03-09T01:56:29.321254+00:00",
   "aggregate": {
     "total_accounts": 9,
-    "total_followers": 286,
-    "total_posts": 1963,
-    "total_threads": 1269,
-    "total_engagement_actions": 1459,
+    "total_followers": 296,
+    "total_posts": 1999,
+    "total_threads": 1290,
+    "total_engagement_actions": 1497,
     "avg_engagement_rate": 21.2,
-    "posts_today": 0,
-    "posts_this_week": 1963,
-    "system_uptime_hours": 136,
-    "drafts_in_queue": 133
+    "posts_today": 36,
+    "posts_this_week": 1999,
+    "system_uptime_hours": 138,
+    "drafts_in_queue": 56
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 114,
-      "followers_delta_24h": 11,
-      "posts_total": 192,
-      "posts_today": 0,
-      "threads_total": 43,
-      "avg_engagement_rate": 4.8,
+      "followers": 116,
+      "followers_delta_24h": 13,
+      "posts_total": 198,
+      "posts_today": 6,
+      "threads_total": 46,
+      "avg_engagement_rate": 4.9,
       "top_post_likes": 2,
-      "drafts_queued": 14
+      "drafts_queued": 8
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
-      "followers": 27,
+      "followers": 28,
       "followers_delta_24h": 11,
-      "posts_total": 120,
-      "posts_today": 0,
-      "threads_total": 9,
-      "avg_engagement_rate": 27.7,
+      "posts_total": 131,
+      "posts_today": 11,
+      "threads_total": 10,
+      "avg_engagement_rate": 26.9,
       "top_post_likes": 5,
-      "drafts_queued": 16
+      "drafts_queued": 3
     },
     {
       "label": "Account 3",
       "niche": "Degen",
-      "followers": 38,
-      "followers_delta_24h": 8,
-      "posts_total": 170,
-      "posts_today": 0,
-      "threads_total": 26,
-      "avg_engagement_rate": 24.3,
+      "followers": 45,
+      "followers_delta_24h": 14,
+      "posts_total": 177,
+      "posts_today": 7,
+      "threads_total": 27,
+      "avg_engagement_rate": 25.3,
       "top_post_likes": 2,
-      "drafts_queued": 14
+      "drafts_queued": 13
     },
     {
       "label": "Account 4",
       "niche": "Finance",
       "followers": 32,
       "followers_delta_24h": 2,
-      "posts_total": 551,
-      "posts_today": 0,
-      "threads_total": 73,
-      "avg_engagement_rate": 14.0,
+      "posts_total": 557,
+      "posts_today": 6,
+      "threads_total": 75,
+      "avg_engagement_rate": 14.2,
       "top_post_likes": 2,
-      "drafts_queued": 25
+      "drafts_queued": 9
     },
     {
       "label": "Account 5",
       "niche": "Geopolitics",
       "followers": 9,
-      "followers_delta_24h": 7,
-      "posts_total": 101,
-      "posts_today": 0,
-      "threads_total": 17,
-      "avg_engagement_rate": 10.7,
+      "followers_delta_24h": 6,
+      "posts_total": 103,
+      "posts_today": 2,
+      "threads_total": 18,
+      "avg_engagement_rate": 10.5,
       "top_post_likes": 2,
-      "drafts_queued": 10
+      "drafts_queued": 0
     },
     {
       "label": "Account 6",
@@ -83,7 +83,7 @@
       "threads_total": 20,
       "avg_engagement_rate": 31.6,
       "top_post_likes": 1,
-      "drafts_queued": 28
+      "drafts_queued": 5
     },
     {
       "label": "Account 7",
@@ -93,7 +93,7 @@
       "posts_total": 94,
       "posts_today": 0,
       "threads_total": 14,
-      "avg_engagement_rate": 52.1,
+      "avg_engagement_rate": 51.9,
       "top_post_likes": 3,
       "drafts_queued": 0
     },
@@ -101,13 +101,13 @@
       "label": "Account 8",
       "niche": "Uplifting",
       "followers": 45,
-      "followers_delta_24h": 9,
-      "posts_total": 546,
-      "posts_today": 0,
+      "followers_delta_24h": 5,
+      "posts_total": 550,
+      "posts_today": 4,
       "threads_total": 60,
       "avg_engagement_rate": 4.6,
       "top_post_likes": 2,
-      "drafts_queued": 26
+      "drafts_queued": 18
     },
     {
       "label": "Account 9",
@@ -126,7 +126,7 @@
     "total_channels": 2,
     "total_subscribers": 6,
     "total_videos": 10,
-    "total_views": 4172,
+    "total_views": 4174,
     "channels": [
       {
         "label": "Channel 1",
@@ -135,7 +135,7 @@
         "videos_total": 9,
         "videos_ready": 0,
         "videos_today": 0,
-        "total_views": 3289,
+        "total_views": 3291,
         "total_likes": 22
       },
       {
