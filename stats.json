@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-03-10T19:41:32.989675+00:00",
+  "generated_at": "2026-03-10T23:41:32.986717+00:00",
   "aggregate": {
     "total_accounts": 7,
     "total_followers": 326,
-    "total_posts": 2341,
+    "total_posts": 2343,
     "total_threads": 1456,
-    "total_engagement_actions": 2063,
+    "total_engagement_actions": 2067,
     "avg_engagement_rate": 22.1,
-    "posts_today": 44,
-    "posts_this_week": 2341,
-    "system_uptime_hours": 180,
-    "drafts_in_queue": 61
+    "posts_today": 46,
+    "posts_this_week": 2343,
+    "system_uptime_hours": 184,
+    "drafts_in_queue": 73
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 141,
-      "followers_delta_24h": 5,
-      "posts_total": 248,
-      "posts_today": 6,
+      "followers_delta_24h": 4,
+      "posts_total": 249,
+      "posts_today": 7,
       "threads_total": 52,
       "avg_engagement_rate": 5.2,
       "top_post_likes": 2,
@@ -29,7 +29,7 @@
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 46,
-      "followers_delta_24h": 7,
+      "followers_delta_24h": 6,
       "posts_total": 196,
       "posts_today": 12,
       "threads_total": 17,
@@ -65,7 +65,7 @@
       "label": "Account 5",
       "niche": "Manifestation Engagement",
       "followers": 7,
-      "followers_delta_24h": 1,
+      "followers_delta_24h": 0,
       "posts_total": 163,
       "posts_today": 11,
       "threads_total": 24,
@@ -78,12 +78,12 @@
       "niche": "Uplifting",
       "followers": 65,
       "followers_delta_24h": 4,
-      "posts_total": 587,
-      "posts_today": 2,
+      "posts_total": 588,
+      "posts_today": 3,
       "threads_total": 67,
       "avg_engagement_rate": 4.5,
       "top_post_likes": 2,
-      "drafts_queued": 19
+      "drafts_queued": 23
     },
     {
       "label": "Account 7",
@@ -102,16 +102,16 @@
     "total_channels": 2,
     "total_subscribers": 8,
     "total_videos": 12,
-    "total_views": 5064,
+    "total_views": 5128,
     "channels": [
       {
         "label": "Channel 1",
         "niche": "General",
         "subscribers": 2,
         "videos_total": 10,
-        "videos_ready": 1,
-        "videos_today": 2,
-        "total_views": 3920,
+        "videos_ready": 0,
+        "videos_today": 4,
+        "total_views": 3984,
         "total_likes": 26
       },
       {
