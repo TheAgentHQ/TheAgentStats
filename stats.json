@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T03:41:32.987532+00:00",
+  "generated_at": "2026-03-11T05:07:11.589101+00:00",
   "aggregate": {
     "total_accounts": 7,
     "total_followers": 332,
@@ -9,8 +9,8 @@
     "avg_engagement_rate": 22.1,
     "posts_today": 1,
     "posts_this_week": 2314,
-    "system_uptime_hours": 188,
-    "drafts_in_queue": 100
+    "system_uptime_hours": 189,
+    "drafts_in_queue": 106
   },
   "accounts": [
     {
@@ -29,7 +29,7 @@
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 46,
-      "followers_delta_24h": 6,
+      "followers_delta_24h": -1,
       "posts_total": 196,
       "posts_today": 0,
       "threads_total": 17,
@@ -41,7 +41,7 @@
       "label": "Account 3",
       "niche": "Degen",
       "followers": 41,
-      "followers_delta_24h": -1,
+      "followers_delta_24h": 0,
       "posts_total": 233,
       "posts_today": 0,
       "threads_total": 38,
@@ -53,7 +53,7 @@
       "label": "Account 4",
       "niche": "Geopolitics",
       "followers": 26,
-      "followers_delta_24h": 4,
+      "followers_delta_24h": 3,
       "posts_total": 132,
       "posts_today": 1,
       "threads_total": 26,
@@ -77,19 +77,19 @@
       "label": "Account 6",
       "niche": "Uplifting",
       "followers": 65,
-      "followers_delta_24h": 4,
+      "followers_delta_24h": 2,
       "posts_total": 588,
       "posts_today": 0,
       "threads_total": 67,
       "avg_engagement_rate": 4.5,
       "top_post_likes": 2,
-      "drafts_queued": 27
+      "drafts_queued": 29
     },
     {
       "label": "Account 7",
       "niche": "Video Curator",
       "followers": 3,
-      "followers_delta_24h": 1,
+      "followers_delta_24h": 0,
       "posts_total": 12,
       "posts_today": 0,
       "threads_total": 0,
