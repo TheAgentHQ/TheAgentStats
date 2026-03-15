@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-03-15T05:35:39.168926+00:00",
+  "generated_at": "2026-03-15T05:53:04.430395+00:00",
   "aggregate": {
     "total_accounts": 8,
-    "total_followers": 612,
-    "total_posts": 3052,
-    "total_threads": 1930,
-    "total_engagement_actions": 2989,
-    "avg_engagement_rate": 14.4,
-    "posts_today": 34,
-    "posts_this_week": 1567,
+    "total_followers": 652,
+    "total_posts": 3059,
+    "total_threads": 1936,
+    "total_engagement_actions": 2997,
+    "avg_engagement_rate": 14.3,
+    "posts_today": 40,
+    "posts_this_week": 1573,
     "system_uptime_hours": 286,
-    "drafts_in_queue": 1807
+    "drafts_in_queue": 1804
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 271,
-      "followers_delta_24h": 22,
+      "followers": 273,
+      "followers_delta_24h": 24,
       "posts_total": 346,
       "posts_today": 10,
       "threads_total": 88,
@@ -35,29 +35,29 @@
       "threads_total": 32,
       "avg_engagement_rate": 17.3,
       "top_post_likes": 5,
-      "drafts_queued": 536
+      "drafts_queued": 545
     },
     {
       "label": "Account 3",
       "niche": "Degen",
       "followers": 78,
       "followers_delta_24h": 6,
-      "posts_total": 372,
-      "posts_today": 6,
-      "threads_total": 61,
+      "posts_total": 378,
+      "posts_today": 12,
+      "threads_total": 62,
       "avg_engagement_rate": 18.4,
       "top_post_likes": 2,
-      "drafts_queued": 312
+      "drafts_queued": 317
     },
     {
       "label": "Account 4",
       "niche": "Finance",
-      "followers": 0,
-      "followers_delta_24h": 0,
-      "posts_total": 587,
+      "followers": 38,
+      "followers_delta_24h": 38,
+      "posts_total": 588,
       "posts_today": 0,
       "threads_total": 80,
-      "avg_engagement_rate": 13.3,
+      "avg_engagement_rate": 13.2,
       "top_post_likes": 2,
       "drafts_queued": 8
     },
@@ -65,13 +65,13 @@
       "label": "Account 5",
       "niche": "Geopolitics",
       "followers": 93,
-      "followers_delta_24h": 8,
+      "followers_delta_24h": 7,
       "posts_total": 168,
       "posts_today": 0,
       "threads_total": 40,
-      "avg_engagement_rate": 5.0,
+      "avg_engagement_rate": 4.9,
       "top_post_likes": 2,
-      "drafts_queued": 371
+      "drafts_queued": 368
     },
     {
       "label": "Account 6",
@@ -83,7 +83,7 @@
       "threads_total": 57,
       "avg_engagement_rate": 35.9,
       "top_post_likes": 3,
-      "drafts_queued": 341
+      "drafts_queued": 327
     },
     {
       "label": "Account 7",
@@ -105,7 +105,7 @@
       "posts_total": 19,
       "posts_today": 0,
       "threads_total": 0,
-      "avg_engagement_rate": 15.6,
+      "avg_engagement_rate": 15.0,
       "top_post_likes": 3,
       "drafts_queued": 14
     }
