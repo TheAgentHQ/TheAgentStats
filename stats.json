@@ -1,101 +1,101 @@
 {
-  "generated_at": "2026-03-15T14:29:04.334212+00:00",
+  "generated_at": "2026-03-15T18:29:04.334508+00:00",
   "aggregate": {
     "total_accounts": 8,
-    "total_followers": 699,
-    "total_posts": 3118,
-    "total_threads": 1963,
-    "total_engagement_actions": 3053,
-    "avg_engagement_rate": 12.8,
-    "posts_today": 99,
-    "posts_this_week": 1632,
-    "system_uptime_hours": 295,
-    "drafts_in_queue": 2124
+    "total_followers": 728,
+    "total_posts": 3129,
+    "total_threads": 1964,
+    "total_engagement_actions": 3082,
+    "avg_engagement_rate": 12.4,
+    "posts_today": 110,
+    "posts_this_week": 1643,
+    "system_uptime_hours": 299,
+    "drafts_in_queue": 2356
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 292,
-      "followers_delta_24h": 36,
-      "posts_total": 348,
-      "posts_today": 12,
+      "followers": 305,
+      "followers_delta_24h": 46,
+      "posts_total": 350,
+      "posts_today": 14,
       "threads_total": 88,
-      "avg_engagement_rate": 5.5,
+      "avg_engagement_rate": 5.4,
       "top_post_likes": 2,
-      "drafts_queued": 232
+      "drafts_queued": 289
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 84,
-      "followers_delta_24h": 4,
-      "posts_total": 367,
-      "posts_today": 40,
-      "threads_total": 37,
-      "avg_engagement_rate": 16.5,
+      "followers_delta_24h": 2,
+      "posts_total": 368,
+      "posts_today": 41,
+      "threads_total": 38,
+      "avg_engagement_rate": 16.2,
       "top_post_likes": 5,
-      "drafts_queued": 555
+      "drafts_queued": 623
     },
     {
       "label": "Account 3",
       "niche": "Degen",
-      "followers": 85,
+      "followers": 86,
       "followers_delta_24h": 11,
-      "posts_total": 387,
-      "posts_today": 21,
+      "posts_total": 388,
+      "posts_today": 22,
       "threads_total": 62,
-      "avg_engagement_rate": 15.7,
+      "avg_engagement_rate": 15.0,
       "top_post_likes": 2,
-      "drafts_queued": 337
+      "drafts_queued": 354
     },
     {
       "label": "Account 4",
       "niche": "Finance",
-      "followers": 40,
-      "followers_delta_24h": 40,
-      "posts_total": 590,
-      "posts_today": 2,
+      "followers": 41,
+      "followers_delta_24h": 41,
+      "posts_total": 591,
+      "posts_today": 3,
       "threads_total": 80,
-      "avg_engagement_rate": 12.3,
+      "avg_engagement_rate": 11.6,
       "top_post_likes": 2,
-      "drafts_queued": 208
+      "drafts_queued": 154
     },
     {
       "label": "Account 5",
       "niche": "Geopolitics",
-      "followers": 99,
-      "followers_delta_24h": 7,
-      "posts_total": 170,
-      "posts_today": 2,
+      "followers": 106,
+      "followers_delta_24h": 12,
+      "posts_total": 171,
+      "posts_today": 3,
       "threads_total": 40,
-      "avg_engagement_rate": 4.5,
+      "avg_engagement_rate": 4.3,
       "top_post_likes": 2,
-      "drafts_queued": 336
+      "drafts_queued": 381
     },
     {
       "label": "Account 6",
       "niche": "Manifestation Engagement",
       "followers": 14,
       "followers_delta_24h": 1,
-      "posts_total": 430,
-      "posts_today": 9,
+      "posts_total": 433,
+      "posts_today": 12,
       "threads_total": 58,
-      "avg_engagement_rate": 31.3,
+      "avg_engagement_rate": 30.6,
       "top_post_likes": 3,
-      "drafts_queued": 322
+      "drafts_queued": 388
     },
     {
       "label": "Account 7",
       "niche": "Uplifting",
-      "followers": 77,
-      "followers_delta_24h": 10,
-      "posts_total": 623,
-      "posts_today": 13,
+      "followers": 84,
+      "followers_delta_24h": 17,
+      "posts_total": 625,
+      "posts_today": 15,
       "threads_total": 78,
-      "avg_engagement_rate": 4.0,
+      "avg_engagement_rate": 3.9,
       "top_post_likes": 2,
-      "drafts_queued": 102
+      "drafts_queued": 131
     },
     {
       "label": "Account 8",
@@ -105,7 +105,7 @@
       "posts_total": 19,
       "posts_today": 0,
       "threads_total": 0,
-      "avg_engagement_rate": 12.8,
+      "avg_engagement_rate": 12.0,
       "top_post_likes": 3,
       "drafts_queued": 14
     }
@@ -122,7 +122,7 @@
         "subscribers": 2,
         "videos_total": 15,
         "videos_ready": 1,
-        "videos_today": 0,
+        "videos_today": 1,
         "total_views": 6093,
         "total_likes": 36
       },
