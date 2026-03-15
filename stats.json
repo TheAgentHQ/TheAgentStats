@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-15T05:53:04.430395+00:00",
+  "generated_at": "2026-03-15T06:29:04.341626+00:00",
   "aggregate": {
     "total_accounts": 8,
     "total_followers": 652,
-    "total_posts": 3059,
-    "total_threads": 1936,
-    "total_engagement_actions": 2997,
-    "avg_engagement_rate": 14.3,
-    "posts_today": 40,
-    "posts_this_week": 1573,
-    "system_uptime_hours": 286,
-    "drafts_in_queue": 1804
+    "total_posts": 3063,
+    "total_threads": 1938,
+    "total_engagement_actions": 3000,
+    "avg_engagement_rate": 14.0,
+    "posts_today": 44,
+    "posts_this_week": 1577,
+    "system_uptime_hours": 287,
+    "drafts_in_queue": 1813
   },
   "accounts": [
     {
@@ -23,17 +23,17 @@
       "threads_total": 88,
       "avg_engagement_rate": 5.5,
       "top_post_likes": 2,
-      "drafts_queued": 145
+      "drafts_queued": 153
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 82,
       "followers_delta_24h": 2,
-      "posts_total": 336,
-      "posts_today": 9,
-      "threads_total": 32,
-      "avg_engagement_rate": 17.3,
+      "posts_total": 339,
+      "posts_today": 12,
+      "threads_total": 33,
+      "avg_engagement_rate": 17.1,
       "top_post_likes": 5,
       "drafts_queued": 545
     },
@@ -42,10 +42,10 @@
       "niche": "Degen",
       "followers": 78,
       "followers_delta_24h": 6,
-      "posts_total": 378,
-      "posts_today": 12,
+      "posts_total": 379,
+      "posts_today": 13,
       "threads_total": 62,
-      "avg_engagement_rate": 18.4,
+      "avg_engagement_rate": 17.8,
       "top_post_likes": 2,
       "drafts_queued": 317
     },
@@ -59,7 +59,7 @@
       "threads_total": 80,
       "avg_engagement_rate": 13.2,
       "top_post_likes": 2,
-      "drafts_queued": 8
+      "drafts_queued": 10
     },
     {
       "label": "Account 5",
@@ -71,7 +71,7 @@
       "threads_total": 40,
       "avg_engagement_rate": 4.9,
       "top_post_likes": 2,
-      "drafts_queued": 368
+      "drafts_queued": 366
     },
     {
       "label": "Account 6",
@@ -81,9 +81,9 @@
       "posts_total": 422,
       "posts_today": 1,
       "threads_total": 57,
-      "avg_engagement_rate": 35.9,
+      "avg_engagement_rate": 34.5,
       "top_post_likes": 3,
-      "drafts_queued": 327
+      "drafts_queued": 324
     },
     {
       "label": "Account 7",
@@ -95,7 +95,7 @@
       "threads_total": 77,
       "avg_engagement_rate": 4.0,
       "top_post_likes": 2,
-      "drafts_queued": 72
+      "drafts_queued": 74
     },
     {
       "label": "Account 8",
