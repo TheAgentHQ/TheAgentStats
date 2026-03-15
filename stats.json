@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-15T00:20:56.542693+00:00",
+  "generated_at": "2026-03-15T00:27:30.945618+00:00",
   "aggregate": {
     "total_accounts": 7,
-    "total_followers": 596,
-    "total_posts": 3018,
+    "total_followers": 597,
+    "total_posts": 3019,
     "total_threads": 1928,
     "total_engagement_actions": 2960,
-    "avg_engagement_rate": 16.3,
-    "posts_today": 0,
-    "posts_this_week": 1533,
+    "avg_engagement_rate": 16.2,
+    "posts_today": 1,
+    "posts_this_week": 1534,
     "system_uptime_hours": 281,
     "drafts_in_queue": 1835
   },
@@ -40,12 +40,12 @@
     {
       "label": "Account 3",
       "niche": "Degen",
-      "followers": 74,
-      "followers_delta_24h": 8,
-      "posts_total": 366,
-      "posts_today": 0,
+      "followers": 75,
+      "followers_delta_24h": 9,
+      "posts_total": 367,
+      "posts_today": 1,
       "threads_total": 61,
-      "avg_engagement_rate": 21.7,
+      "avg_engagement_rate": 21.1,
       "top_post_likes": 2,
       "drafts_queued": 322
     },
@@ -57,7 +57,7 @@
       "posts_total": 168,
       "posts_today": 0,
       "threads_total": 40,
-      "avg_engagement_rate": 5.7,
+      "avg_engagement_rate": 5.5,
       "top_post_likes": 2,
       "drafts_queued": 418
     },
