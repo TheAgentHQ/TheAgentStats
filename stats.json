@@ -1,89 +1,89 @@
 {
-  "generated_at": "2026-03-18T20:41:55.151973+00:00",
+  "generated_at": "2026-03-19T00:41:55.154367+00:00",
   "aggregate": {
     "total_accounts": 7,
-    "total_followers": 896,
-    "total_posts": 3780,
+    "total_followers": 885,
+    "total_posts": 3784,
     "total_threads": 2370,
-    "total_engagement_actions": 3611,
-    "avg_engagement_rate": 8.7,
-    "posts_today": 45,
-    "posts_this_week": 1436,
-    "system_uptime_hours": 373,
-    "drafts_in_queue": 2493
+    "total_engagement_actions": 3612,
+    "avg_engagement_rate": 8.6,
+    "posts_today": 1,
+    "posts_this_week": 1411,
+    "system_uptime_hours": 377,
+    "drafts_in_queue": 2511
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 404,
+      "followers": 406,
       "followers_delta_24h": 4,
-      "posts_total": 394,
-      "posts_today": 4,
+      "posts_total": 395,
+      "posts_today": 1,
       "threads_total": 95,
       "avg_engagement_rate": 4.7,
       "top_post_likes": 2,
-      "drafts_queued": 227
+      "drafts_queued": 253
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
-      "followers": 118,
-      "followers_delta_24h": 11,
-      "posts_total": 542,
-      "posts_today": 11,
+      "followers": 116,
+      "followers_delta_24h": 8,
+      "posts_total": 543,
+      "posts_today": 0,
       "threads_total": 73,
       "avg_engagement_rate": 13.0,
       "top_post_likes": 5,
-      "drafts_queued": 812
+      "drafts_queued": 795
     },
     {
       "label": "Account 3",
       "niche": "Degen",
-      "followers": 103,
-      "followers_delta_24h": 9,
+      "followers": 89,
+      "followers_delta_24h": -8,
       "posts_total": 427,
-      "posts_today": 1,
+      "posts_today": 0,
       "threads_total": 72,
       "avg_engagement_rate": 7.5,
       "top_post_likes": 2,
-      "drafts_queued": 299
+      "drafts_queued": 284
     },
     {
       "label": "Account 4",
       "niche": "Geopolitics",
-      "followers": 134,
-      "followers_delta_24h": 2,
+      "followers": 135,
+      "followers_delta_24h": 3,
       "posts_total": 233,
-      "posts_today": 3,
+      "posts_today": 0,
       "threads_total": 45,
-      "avg_engagement_rate": 3.1,
+      "avg_engagement_rate": 3.0,
       "top_post_likes": 2,
-      "drafts_queued": 334
+      "drafts_queued": 364
     },
     {
       "label": "Account 5",
       "niche": "Manifestation Engagement",
-      "followers": 13,
+      "followers": 14,
       "followers_delta_24h": 1,
       "posts_total": 645,
-      "posts_today": 15,
+      "posts_today": 0,
       "threads_total": 93,
-      "avg_engagement_rate": 23.2,
+      "avg_engagement_rate": 22.8,
       "top_post_likes": 3,
-      "drafts_queued": 382
+      "drafts_queued": 344
     },
     {
       "label": "Account 6",
       "niche": "Uplifting",
-      "followers": 112,
-      "followers_delta_24h": 7,
-      "posts_total": 707,
-      "posts_today": 10,
+      "followers": 113,
+      "followers_delta_24h": 8,
+      "posts_total": 709,
+      "posts_today": 0,
       "threads_total": 86,
-      "avg_engagement_rate": 3.1,
+      "avg_engagement_rate": 3.0,
       "top_post_likes": 2,
-      "drafts_queued": 307
+      "drafts_queued": 330
     },
     {
       "label": "Account 7",
@@ -91,18 +91,18 @@
       "followers": 12,
       "followers_delta_24h": 0,
       "posts_total": 47,
-      "posts_today": 1,
+      "posts_today": 0,
       "threads_total": 0,
       "avg_engagement_rate": 6.1,
       "top_post_likes": 3,
-      "drafts_queued": 4
+      "drafts_queued": 13
     }
   ],
   "youtube": {
     "total_channels": 2,
     "total_subscribers": 8,
     "total_videos": 20,
-    "total_views": 7686,
+    "total_views": 7690,
     "channels": [
       {
         "label": "Channel 1",
@@ -110,8 +110,8 @@
         "subscribers": 2,
         "videos_total": 18,
         "videos_ready": 0,
-        "videos_today": 4,
-        "total_views": 6536,
+        "videos_today": 0,
+        "total_views": 6540,
         "total_likes": 38
       },
       {
