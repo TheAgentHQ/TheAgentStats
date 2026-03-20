@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-20T17:33:14.525387+00:00",
+  "generated_at": "2026-03-20T17:41:12.937516+00:00",
   "aggregate": {
     "total_accounts": 7,
-    "total_followers": 995,
+    "total_followers": 996,
     "total_posts": 3941,
     "total_threads": 2477,
     "total_engagement_actions": 3738,
@@ -10,14 +10,14 @@
     "posts_today": 108,
     "posts_this_week": 1283,
     "system_uptime_hours": 418,
-    "drafts_in_queue": 3829
+    "drafts_in_queue": 3826
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 430,
-      "followers_delta_24h": 25,
+      "followers": 431,
+      "followers_delta_24h": 26,
       "posts_total": 406,
       "posts_today": 3,
       "threads_total": 100,
@@ -35,7 +35,7 @@
       "threads_total": 80,
       "avg_engagement_rate": 10.7,
       "top_post_likes": 5,
-      "drafts_queued": 1119
+      "drafts_queued": 1116
     },
     {
       "label": "Account 3",
@@ -81,7 +81,7 @@
       "posts_total": 741,
       "posts_today": 20,
       "threads_total": 94,
-      "avg_engagement_rate": 2.9,
+      "avg_engagement_rate": 2.8,
       "top_post_likes": 2,
       "drafts_queued": 391
     },
