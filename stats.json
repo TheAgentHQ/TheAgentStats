@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-03-20T17:41:12.937516+00:00",
+  "generated_at": "2026-03-20T21:41:12.926774+00:00",
   "aggregate": {
     "total_accounts": 7,
-    "total_followers": 996,
-    "total_posts": 3941,
-    "total_threads": 2477,
-    "total_engagement_actions": 3738,
-    "avg_engagement_rate": 7.7,
-    "posts_today": 108,
-    "posts_this_week": 1283,
-    "system_uptime_hours": 418,
-    "drafts_in_queue": 3826
+    "total_followers": 1015,
+    "total_posts": 3955,
+    "total_threads": 2480,
+    "total_engagement_actions": 3750,
+    "avg_engagement_rate": 7.6,
+    "posts_today": 122,
+    "posts_this_week": 1297,
+    "system_uptime_hours": 422,
+    "drafts_in_queue": 3959
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 431,
-      "followers_delta_24h": 26,
+      "followers": 440,
+      "followers_delta_24h": 33,
       "posts_total": 406,
       "posts_today": 3,
       "threads_total": 100,
       "avg_engagement_rate": 4.4,
       "top_post_likes": 2,
-      "drafts_queued": 575
+      "drafts_queued": 601
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 137,
-      "followers_delta_24h": 11,
-      "posts_total": 573,
-      "posts_today": 24,
-      "threads_total": 80,
-      "avg_engagement_rate": 10.7,
+      "followers_delta_24h": 6,
+      "posts_total": 577,
+      "posts_today": 28,
+      "threads_total": 81,
+      "avg_engagement_rate": 10.6,
       "top_post_likes": 5,
-      "drafts_queued": 1116
+      "drafts_queued": 1125
     },
     {
       "label": "Account 3",
       "niche": "Degen",
-      "followers": 101,
-      "followers_delta_24h": -3,
+      "followers": 102,
+      "followers_delta_24h": 0,
       "posts_total": 427,
       "posts_today": 0,
       "threads_total": 72,
@@ -52,48 +52,48 @@
     {
       "label": "Account 4",
       "niche": "Geopolitics",
-      "followers": 161,
-      "followers_delta_24h": 9,
-      "posts_total": 249,
-      "posts_today": 10,
+      "followers": 165,
+      "followers_delta_24h": 13,
+      "posts_total": 252,
+      "posts_today": 13,
       "threads_total": 48,
       "avg_engagement_rate": 2.7,
       "top_post_likes": 2,
-      "drafts_queued": 347
+      "drafts_queued": 365
     },
     {
       "label": "Account 5",
       "niche": "Manifestation Engagement",
-      "followers": 14,
-      "followers_delta_24h": -1,
+      "followers": 15,
+      "followers_delta_24h": 0,
       "posts_total": 712,
       "posts_today": 50,
       "threads_total": 103,
-      "avg_engagement_rate": 19.9,
+      "avg_engagement_rate": 19.8,
       "top_post_likes": 3,
-      "drafts_queued": 906
+      "drafts_queued": 927
     },
     {
       "label": "Account 6",
       "niche": "Uplifting",
-      "followers": 136,
-      "followers_delta_24h": 15,
-      "posts_total": 741,
-      "posts_today": 20,
-      "threads_total": 94,
+      "followers": 139,
+      "followers_delta_24h": 23,
+      "posts_total": 748,
+      "posts_today": 27,
+      "threads_total": 95,
       "avg_engagement_rate": 2.8,
       "top_post_likes": 2,
-      "drafts_queued": 391
+      "drafts_queued": 456
     },
     {
       "label": "Account 7",
       "niche": "Video Curator",
-      "followers": 16,
-      "followers_delta_24h": 4,
+      "followers": 17,
+      "followers_delta_24h": 1,
       "posts_total": 48,
       "posts_today": 1,
       "threads_total": 0,
-      "avg_engagement_rate": 5.7,
+      "avg_engagement_rate": 5.6,
       "top_post_likes": 3,
       "drafts_queued": 6
     }
@@ -109,8 +109,8 @@
         "niche": "General",
         "subscribers": 2,
         "videos_total": 19,
-        "videos_ready": 0,
-        "videos_today": 3,
+        "videos_ready": 1,
+        "videos_today": 4,
         "total_views": 6541,
         "total_likes": 38
       },
@@ -122,7 +122,7 @@
         "videos_ready": 0,
         "videos_today": 0,
         "total_views": 1154,
-        "total_likes": 0
+        "total_likes": 38
       }
     ]
   },
