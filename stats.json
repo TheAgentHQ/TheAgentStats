@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-29T16:41:49.528803+00:00",
+  "generated_at": "2026-03-29T17:01:31.523257+00:00",
   "aggregate": {
     "total_accounts": 7,
-    "total_followers": 1413,
+    "total_followers": 1416,
     "total_posts": 5383,
     "total_threads": 3263,
     "total_engagement_actions": 4662,
@@ -10,20 +10,20 @@
     "posts_today": 86,
     "posts_this_week": 1207,
     "system_uptime_hours": 633,
-    "drafts_in_queue": 2017
+    "drafts_in_queue": 2004
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 489,
-      "followers_delta_24h": 0,
+      "followers": 491,
+      "followers_delta_24h": 2,
       "posts_total": 559,
       "posts_today": 0,
       "threads_total": 133,
       "avg_engagement_rate": 4.9,
       "top_post_likes": 2,
-      "drafts_queued": 183
+      "drafts_queued": 179
     },
     {
       "label": "Account 2",
@@ -35,13 +35,13 @@
       "threads_total": 115,
       "avg_engagement_rate": 9.5,
       "top_post_likes": 5,
-      "drafts_queued": 443
+      "drafts_queued": 442
     },
     {
       "label": "Account 3",
       "niche": "Degen",
-      "followers": 87,
-      "followers_delta_24h": -3,
+      "followers": 86,
+      "followers_delta_24h": -4,
       "posts_total": 428,
       "posts_today": 0,
       "threads_total": 72,
@@ -59,7 +59,7 @@
       "threads_total": 61,
       "avg_engagement_rate": 1.5,
       "top_post_likes": 2,
-      "drafts_queued": 326
+      "drafts_queued": 328
     },
     {
       "label": "Account 5",
@@ -76,26 +76,26 @@
     {
       "label": "Account 6",
       "niche": "Uplifting",
-      "followers": 296,
-      "followers_delta_24h": 6,
+      "followers": 297,
+      "followers_delta_24h": 7,
       "posts_total": 1080,
       "posts_today": 26,
       "threads_total": 135,
       "avg_engagement_rate": 2.3,
       "top_post_likes": 2,
-      "drafts_queued": 346
+      "drafts_queued": 337
     },
     {
       "label": "Account 7",
       "niche": "Video Curator",
-      "followers": 43,
-      "followers_delta_24h": 0,
+      "followers": 44,
+      "followers_delta_24h": 1,
       "posts_total": 248,
       "posts_today": 0,
       "threads_total": 0,
       "avg_engagement_rate": 3.8,
       "top_post_likes": 3,
-      "drafts_queued": 78
+      "drafts_queued": 77
     }
   ],
   "youtube": {
@@ -110,7 +110,7 @@
         "subscribers": 2,
         "videos_total": 21,
         "videos_ready": 0,
-        "videos_today": 3,
+        "videos_today": 4,
         "total_views": 6653,
         "total_likes": 38
       },
