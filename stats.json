@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-03-31T03:09:55.721780+00:00",
+  "generated_at": "2026-03-31T07:09:55.721812+00:00",
   "aggregate": {
     "total_accounts": 7,
-    "total_followers": 1420,
-    "total_posts": 5632,
-    "total_threads": 3390,
-    "total_engagement_actions": 4885,
+    "total_followers": 1409,
+    "total_posts": 5667,
+    "total_threads": 3422,
+    "total_engagement_actions": 4912,
     "avg_engagement_rate": 5.6,
-    "posts_today": 33,
-    "posts_this_week": 1147,
-    "system_uptime_hours": 667,
-    "drafts_in_queue": 2220
+    "posts_today": 68,
+    "posts_this_week": 1182,
+    "system_uptime_hours": 671,
+    "drafts_in_queue": 2138
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 491,
-      "followers_delta_24h": -3,
+      "followers_delta_24h": -1,
       "posts_total": 599,
       "posts_today": 0,
       "threads_total": 159,
@@ -28,14 +28,14 @@
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
-      "followers": 239,
+      "followers": 238,
       "followers_delta_24h": -1,
       "posts_total": 772,
       "posts_today": 0,
       "threads_total": 115,
       "avg_engagement_rate": 9.5,
       "top_post_likes": 5,
-      "drafts_queued": 214
+      "drafts_queued": 130
     },
     {
       "label": "Account 3",
@@ -52,50 +52,50 @@
     {
       "label": "Account 4",
       "niche": "Geopolitics",
-      "followers": 233,
-      "followers_delta_24h": -2,
+      "followers": 229,
+      "followers_delta_24h": -6,
       "posts_total": 367,
       "posts_today": 0,
       "threads_total": 63,
       "avg_engagement_rate": 1.7,
       "top_post_likes": 2,
-      "drafts_queued": 459
+      "drafts_queued": 439
     },
     {
       "label": "Account 5",
       "niche": "Manifestation Engagement",
       "followers": 28,
-      "followers_delta_24h": 0,
-      "posts_total": 1235,
-      "posts_today": 24,
-      "threads_total": 177,
-      "avg_engagement_rate": 10.2,
+      "followers_delta_24h": 1,
+      "posts_total": 1267,
+      "posts_today": 56,
+      "threads_total": 181,
+      "avg_engagement_rate": 10.3,
       "top_post_likes": 3,
-      "drafts_queued": 644
+      "drafts_queued": 674
     },
     {
       "label": "Account 6",
       "niche": "Uplifting",
-      "followers": 298,
-      "followers_delta_24h": 2,
-      "posts_total": 1151,
-      "posts_today": 7,
+      "followers": 292,
+      "followers_delta_24h": -5,
+      "posts_total": 1153,
+      "posts_today": 9,
       "threads_total": 146,
       "avg_engagement_rate": 2.2,
       "top_post_likes": 2,
-      "drafts_queued": 417
+      "drafts_queued": 415
     },
     {
       "label": "Account 7",
       "niche": "Video Curator",
       "followers": 45,
-      "followers_delta_24h": 0,
-      "posts_total": 295,
-      "posts_today": 2,
+      "followers_delta_24h": -1,
+      "posts_total": 296,
+      "posts_today": 3,
       "threads_total": 0,
       "avg_engagement_rate": 3.8,
       "top_post_likes": 3,
-      "drafts_queued": 35
+      "drafts_queued": 31
     }
   ],
   "youtube": {
