@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-02T00:38:02.892321+00:00",
+  "generated_at": "2026-04-02T00:56:39.446247+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1332,
-    "total_posts": 6019,
-    "total_threads": 3615,
+    "total_followers": 1333,
+    "total_posts": 6027,
+    "total_threads": 3623,
     "total_engagement_actions": 5153,
     "avg_engagement_rate": 5.3,
-    "posts_today": 8,
-    "posts_this_week": 1250,
+    "posts_today": 16,
+    "posts_this_week": 1258,
     "system_uptime_hours": 713,
-    "drafts_in_queue": 2231
+    "drafts_in_queue": 2215
   },
   "accounts": [
     {
@@ -42,12 +42,12 @@
       "niche": "Geopolitics",
       "followers": 238,
       "followers_delta_24h": 4,
-      "posts_total": 422,
-      "posts_today": 0,
-      "threads_total": 70,
+      "posts_total": 430,
+      "posts_today": 8,
+      "threads_total": 71,
       "avg_engagement_rate": 1.7,
       "top_post_likes": 2,
-      "drafts_queued": 453
+      "drafts_queued": 445
     },
     {
       "label": "Account 4",
@@ -64,14 +64,14 @@
     {
       "label": "Account 5",
       "niche": "Uplifting",
-      "followers": 300,
-      "followers_delta_24h": 1,
+      "followers": 301,
+      "followers_delta_24h": 2,
       "posts_total": 1201,
       "posts_today": 0,
       "threads_total": 152,
       "avg_engagement_rate": 2.2,
       "top_post_likes": 2,
-      "drafts_queued": 362
+      "drafts_queued": 354
     },
     {
       "label": "Account 6",
