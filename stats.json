@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T05:42:24.923429+00:00",
+  "generated_at": "2026-04-02T09:42:24.886407+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 1349,
@@ -9,15 +9,15 @@
     "avg_engagement_rate": 5.3,
     "posts_today": 171,
     "posts_this_week": 1413,
-    "system_uptime_hours": 718,
-    "drafts_in_queue": 2171
+    "system_uptime_hours": 722,
+    "drafts_in_queue": 2276
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 489,
-      "followers_delta_24h": 4,
+      "followers_delta_24h": 5,
       "posts_total": 655,
       "posts_today": 1,
       "threads_total": 177,
@@ -35,13 +35,13 @@
       "threads_total": 122,
       "avg_engagement_rate": 9.4,
       "top_post_likes": 5,
-      "drafts_queued": 339
+      "drafts_queued": 377
     },
     {
       "label": "Account 3",
       "niche": "Geopolitics",
       "followers": 244,
-      "followers_delta_24h": 8,
+      "followers_delta_24h": 9,
       "posts_total": 486,
       "posts_today": 64,
       "threads_total": 80,
@@ -53,7 +53,7 @@
       "label": "Account 4",
       "niche": "Manifestation Engagement",
       "followers": 28,
-      "followers_delta_24h": 1,
+      "followers_delta_24h": 2,
       "posts_total": 1385,
       "posts_today": 68,
       "threads_total": 202,
@@ -65,7 +65,7 @@
       "label": "Account 5",
       "niche": "Uplifting",
       "followers": 309,
-      "followers_delta_24h": 6,
+      "followers_delta_24h": 7,
       "posts_total": 1232,
       "posts_today": 31,
       "threads_total": 158,
@@ -83,7 +83,7 @@
       "threads_total": 0,
       "avg_engagement_rate": 3.8,
       "top_post_likes": 3,
-      "drafts_queued": 3
+      "drafts_queued": 70
     }
   ],
   "youtube": {
@@ -97,7 +97,7 @@
         "niche": "General",
         "subscribers": 2,
         "videos_total": 21,
-        "videos_ready": 0,
+        "videos_ready": 1,
         "videos_today": 0,
         "total_views": 6653,
         "total_likes": 38
