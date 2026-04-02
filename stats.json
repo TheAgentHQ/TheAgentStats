@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T19:36:52.805440+00:00",
+  "generated_at": "2026-04-02T20:42:40.392315+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 1349,
@@ -9,7 +9,7 @@
     "avg_engagement_rate": 5.3,
     "posts_today": 171,
     "posts_this_week": 1413,
-    "system_uptime_hours": 732,
+    "system_uptime_hours": 733,
     "drafts_in_queue": 2540
   },
   "accounts": [
@@ -17,7 +17,7 @@
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 489,
-      "followers_delta_24h": 1,
+      "followers_delta_24h": 0,
       "posts_total": 655,
       "posts_today": 1,
       "threads_total": 177,
@@ -41,7 +41,7 @@
       "label": "Account 3",
       "niche": "Geopolitics",
       "followers": 244,
-      "followers_delta_24h": 3,
+      "followers_delta_24h": 4,
       "posts_total": 486,
       "posts_today": 64,
       "threads_total": 80,
@@ -65,7 +65,7 @@
       "label": "Account 5",
       "niche": "Uplifting",
       "followers": 309,
-      "followers_delta_24h": 6,
+      "followers_delta_24h": 3,
       "posts_total": 1232,
       "posts_today": 31,
       "threads_total": 158,
