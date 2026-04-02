@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T09:42:24.886407+00:00",
+  "generated_at": "2026-04-02T13:42:24.884524+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 1349,
@@ -9,15 +9,15 @@
     "avg_engagement_rate": 5.3,
     "posts_today": 171,
     "posts_this_week": 1413,
-    "system_uptime_hours": 722,
-    "drafts_in_queue": 2276
+    "system_uptime_hours": 726,
+    "drafts_in_queue": 2332
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
       "followers": 489,
-      "followers_delta_24h": 5,
+      "followers_delta_24h": 4,
       "posts_total": 655,
       "posts_today": 1,
       "threads_total": 177,
@@ -29,19 +29,19 @@
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 233,
-      "followers_delta_24h": -2,
+      "followers_delta_24h": 0,
       "posts_total": 832,
       "posts_today": 6,
       "threads_total": 122,
       "avg_engagement_rate": 9.4,
       "top_post_likes": 5,
-      "drafts_queued": 377
+      "drafts_queued": 386
     },
     {
       "label": "Account 3",
       "niche": "Geopolitics",
       "followers": 244,
-      "followers_delta_24h": 9,
+      "followers_delta_24h": 8,
       "posts_total": 486,
       "posts_today": 64,
       "threads_total": 80,
@@ -53,7 +53,7 @@
       "label": "Account 4",
       "niche": "Manifestation Engagement",
       "followers": 28,
-      "followers_delta_24h": 2,
+      "followers_delta_24h": 1,
       "posts_total": 1385,
       "posts_today": 68,
       "threads_total": 202,
@@ -71,13 +71,13 @@
       "threads_total": 158,
       "avg_engagement_rate": 2.2,
       "top_post_likes": 2,
-      "drafts_queued": 342
+      "drafts_queued": 389
     },
     {
       "label": "Account 6",
       "niche": "Video Curator",
       "followers": 46,
-      "followers_delta_24h": 1,
+      "followers_delta_24h": 0,
       "posts_total": 379,
       "posts_today": 1,
       "threads_total": 0,
@@ -97,7 +97,7 @@
         "niche": "General",
         "subscribers": 2,
         "videos_total": 21,
-        "videos_ready": 1,
+        "videos_ready": 0,
         "videos_today": 0,
         "total_views": 6653,
         "total_likes": 38
