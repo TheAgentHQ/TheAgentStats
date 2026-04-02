@@ -1,125 +1,89 @@
 {
-  "generated_at": "2026-04-01T20:43:18.591691+00:00",
+  "generated_at": "2026-04-02T00:31:10.609527+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1329,
-    "total_posts": 6009,
-    "total_threads": 3609,
-    "total_engagement_actions": 5120,
+    "total_followers": 1332,
+    "total_posts": 6019,
+    "total_threads": 3615,
+    "total_engagement_actions": 5153,
     "avg_engagement_rate": 5.3,
-    "posts_today": 273,
-    "posts_this_week": 1371,
-    "system_uptime_hours": 709,
-    "drafts_in_queue": 2201
+    "posts_today": 8,
+    "posts_this_week": 1250,
+    "system_uptime_hours": 713,
+    "drafts_in_queue": 2231
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 485,
-      "followers_delta_24h": 1,
-      "posts_total": 654,
-      "posts_today": 53,
+      "followers": 488,
+      "followers_delta_24h": 7,
+      "posts_total": 655,
+      "posts_today": 1,
       "threads_total": 177,
       "avg_engagement_rate": 5.0,
       "top_post_likes": 2,
-      "drafts_queued": 380
+      "drafts_queued": 389
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 233,
-      "followers_delta_24h": 5,
-      "posts_total": 826,
-      "posts_today": 54,
-      "threads_total": 121,
+      "followers_delta_24h": 2,
+      "posts_total": 832,
+      "posts_today": 6,
+      "threads_total": 122,
       "avg_engagement_rate": 9.4,
       "top_post_likes": 5,
-      "drafts_queued": 224
+      "drafts_queued": 297
     },
     {
       "label": "Account 3",
       "niche": "Geopolitics",
-      "followers": 236,
-      "followers_delta_24h": 0,
+      "followers": 238,
+      "followers_delta_24h": 4,
       "posts_total": 422,
-      "posts_today": 53,
+      "posts_today": 0,
       "threads_total": 70,
       "avg_engagement_rate": 1.7,
       "top_post_likes": 2,
-      "drafts_queued": 466
+      "drafts_queued": 453
     },
     {
       "label": "Account 4",
       "niche": "Manifestation Engagement",
       "followers": 27,
-      "followers_delta_24h": -1,
+      "followers_delta_24h": 0,
       "posts_total": 1317,
-      "posts_today": 50,
+      "posts_today": 0,
       "threads_total": 190,
-      "avg_engagement_rate": 9.7,
+      "avg_engagement_rate": 9.5,
       "top_post_likes": 3,
-      "drafts_queued": 700
+      "drafts_queued": 658
     },
     {
       "label": "Account 5",
       "niche": "Uplifting",
-      "followers": 302,
-      "followers_delta_24h": 3,
+      "followers": 300,
+      "followers_delta_24h": 1,
       "posts_total": 1201,
-      "posts_today": 15,
+      "posts_today": 0,
       "threads_total": 152,
       "avg_engagement_rate": 2.2,
       "top_post_likes": 2,
-      "drafts_queued": 354
+      "drafts_queued": 362
     },
     {
       "label": "Account 6",
       "niche": "Video Curator",
       "followers": 46,
-      "followers_delta_24h": 2,
-      "posts_total": 376,
-      "posts_today": 48,
+      "followers_delta_24h": 1,
+      "posts_total": 379,
+      "posts_today": 1,
       "threads_total": 0,
       "avg_engagement_rate": 3.8,
       "top_post_likes": 3,
       "drafts_queued": 0
     }
-  ],
-  "youtube": {
-    "total_channels": 2,
-    "total_subscribers": 9,
-    "total_videos": 23,
-    "total_views": 7807,
-    "channels": [
-      {
-        "label": "Channel 1",
-        "niche": "General",
-        "subscribers": 2,
-        "videos_total": 21,
-        "videos_ready": 1,
-        "videos_today": 0,
-        "total_views": 6653,
-        "total_likes": 38
-      },
-      {
-        "label": "Channel 2",
-        "niche": "Kids Animation",
-        "subscribers": 7,
-        "videos_total": 2,
-        "videos_ready": 0,
-        "videos_today": 0,
-        "total_views": 1154,
-        "total_likes": 38
-      }
-    ]
-  },
-  "experiments": {
-    "total_run": 0,
-    "accepted": 0,
-    "rejected": 0,
-    "currently_running": 0,
-    "acceptance_rate": 0.0,
-    "best_experiment": null
-  }
+  ]
 }
