@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T05:21:42.770933+00:00",
+  "generated_at": "2026-04-02T05:32:51.970094+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 1349,
@@ -65,7 +65,7 @@
       "label": "Account 5",
       "niche": "Uplifting",
       "followers": 309,
-      "followers_delta_24h": 7,
+      "followers_delta_24h": 6,
       "posts_total": 1232,
       "posts_today": 31,
       "threads_total": 158,
@@ -85,5 +85,41 @@
       "top_post_likes": 3,
       "drafts_queued": 3
     }
-  ]
+  ],
+  "youtube": {
+    "total_channels": 2,
+    "total_subscribers": 9,
+    "total_videos": 23,
+    "total_views": 7807,
+    "channels": [
+      {
+        "label": "Channel 1",
+        "niche": "General",
+        "subscribers": 2,
+        "videos_total": 21,
+        "videos_ready": 0,
+        "videos_today": 0,
+        "total_views": 6653,
+        "total_likes": 38
+      },
+      {
+        "label": "Channel 2",
+        "niche": "Kids Animation",
+        "subscribers": 7,
+        "videos_total": 2,
+        "videos_ready": 0,
+        "videos_today": 0,
+        "total_views": 1154,
+        "total_likes": 38
+      }
+    ]
+  },
+  "experiments": {
+    "total_run": 0,
+    "accepted": 0,
+    "rejected": 0,
+    "currently_running": 0,
+    "acceptance_rate": 0.0,
+    "best_experiment": null
+  }
 }
