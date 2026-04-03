@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T09:59:58.825787+00:00",
+  "generated_at": "2026-04-03T13:59:58.827696+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 1349,
@@ -9,7 +9,7 @@
     "avg_engagement_rate": 5.3,
     "posts_today": 0,
     "posts_this_week": 1232,
-    "system_uptime_hours": 746,
+    "system_uptime_hours": 750,
     "drafts_in_queue": 2759
   },
   "accounts": [
@@ -98,7 +98,7 @@
         "subscribers": 2,
         "videos_total": 21,
         "videos_ready": 1,
-        "videos_today": 2,
+        "videos_today": 5,
         "total_views": 6653,
         "total_likes": 38
       },
