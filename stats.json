@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T05:59:58.827797+00:00",
+  "generated_at": "2026-04-03T09:59:58.825787+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 1349,
@@ -9,8 +9,8 @@
     "avg_engagement_rate": 5.3,
     "posts_today": 0,
     "posts_this_week": 1232,
-    "system_uptime_hours": 742,
-    "drafts_in_queue": 2760
+    "system_uptime_hours": 746,
+    "drafts_in_queue": 2759
   },
   "accounts": [
     {
@@ -71,7 +71,7 @@
       "threads_total": 158,
       "avg_engagement_rate": 2.2,
       "top_post_likes": 2,
-      "drafts_queued": 390
+      "drafts_queued": 389
     },
     {
       "label": "Account 6",
@@ -97,8 +97,8 @@
         "niche": "General",
         "subscribers": 2,
         "videos_total": 21,
-        "videos_ready": 0,
-        "videos_today": 0,
+        "videos_ready": 1,
+        "videos_today": 2,
         "total_views": 6653,
         "total_likes": 38
       },
