@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T05:59:58.831060+00:00",
+  "generated_at": "2026-04-04T09:59:58.830988+00:00",
   "aggregate": {
     "total_accounts": 6,
     "total_followers": 1349,
@@ -9,8 +9,8 @@
     "avg_engagement_rate": 5.3,
     "posts_today": 0,
     "posts_this_week": 1005,
-    "system_uptime_hours": 766,
-    "drafts_in_queue": 2751
+    "system_uptime_hours": 770,
+    "drafts_in_queue": 2759
   },
   "accounts": [
     {
@@ -35,7 +35,7 @@
       "threads_total": 122,
       "avg_engagement_rate": 9.4,
       "top_post_likes": 5,
-      "drafts_queued": 377
+      "drafts_queued": 386
     },
     {
       "label": "Account 3",
@@ -71,7 +71,7 @@
       "threads_total": 158,
       "avg_engagement_rate": 2.2,
       "top_post_likes": 2,
-      "drafts_queued": 390
+      "drafts_queued": 389
     },
     {
       "label": "Account 6",
@@ -98,7 +98,7 @@
         "subscribers": 2,
         "videos_total": 21,
         "videos_ready": 1,
-        "videos_today": 0,
+        "videos_today": 1,
         "total_views": 6653,
         "total_likes": 38
       },
