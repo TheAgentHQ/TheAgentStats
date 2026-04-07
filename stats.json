@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-06T20:37:24.693818+00:00",
+  "generated_at": "2026-04-07T00:37:24.698109+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1368,
-    "total_posts": 6264,
+    "total_followers": 1367,
+    "total_posts": 6265,
     "total_threads": 3790,
-    "total_engagement_actions": 5761,
+    "total_engagement_actions": 5787,
     "avg_engagement_rate": 5.2,
-    "posts_today": 0,
-    "posts_this_week": 820,
-    "system_uptime_hours": 829,
-    "drafts_in_queue": 2743
+    "posts_today": 1,
+    "posts_this_week": 666,
+    "system_uptime_hours": 833,
+    "drafts_in_queue": 2717
   },
   "accounts": [
     {
@@ -23,31 +23,31 @@
       "threads_total": 187,
       "avg_engagement_rate": 5.0,
       "top_post_likes": 2,
-      "drafts_queued": 488
+      "drafts_queued": 486
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
-      "followers": 219,
-      "followers_delta_24h": 1,
+      "followers": 218,
+      "followers_delta_24h": 0,
       "posts_total": 832,
       "posts_today": 0,
       "threads_total": 122,
       "avg_engagement_rate": 9.4,
       "top_post_likes": 5,
-      "drafts_queued": 469
+      "drafts_queued": 453
     },
     {
       "label": "Account 3",
       "niche": "Geopolitics",
       "followers": 250,
-      "followers_delta_24h": 0,
+      "followers_delta_24h": 1,
       "posts_total": 486,
       "posts_today": 0,
       "threads_total": 80,
       "avg_engagement_rate": 2.1,
       "top_post_likes": 2,
-      "drafts_queued": 463
+      "drafts_queued": 465
     },
     {
       "label": "Account 4",
@@ -71,19 +71,19 @@
       "threads_total": 166,
       "avg_engagement_rate": 2.1,
       "top_post_likes": 2,
-      "drafts_queued": 335
+      "drafts_queued": 332
     },
     {
       "label": "Account 6",
       "niche": "Video Curator",
       "followers": 46,
       "followers_delta_24h": 0,
-      "posts_total": 390,
-      "posts_today": 0,
+      "posts_total": 391,
+      "posts_today": 1,
       "threads_total": 0,
       "avg_engagement_rate": 3.8,
       "top_post_likes": 3,
-      "drafts_queued": 73
+      "drafts_queued": 66
     }
   ],
   "youtube": {
@@ -98,7 +98,7 @@
         "subscribers": 2,
         "videos_total": 21,
         "videos_ready": 1,
-        "videos_today": 9,
+        "videos_today": 0,
         "total_views": 6653,
         "total_likes": 38
       },
