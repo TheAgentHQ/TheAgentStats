@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-07T01:00:43.079991+00:00",
+  "generated_at": "2026-04-07T01:14:28.595641+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1367,
+    "total_followers": 1366,
     "total_posts": 6265,
     "total_threads": 3790,
     "total_engagement_actions": 5787,
@@ -10,7 +10,7 @@
     "posts_today": 1,
     "posts_this_week": 666,
     "system_uptime_hours": 833,
-    "drafts_in_queue": 2345
+    "drafts_in_queue": 2447
   },
   "accounts": [
     {
@@ -23,7 +23,7 @@
       "threads_total": 187,
       "avg_engagement_rate": 5.0,
       "top_post_likes": 2,
-      "drafts_queued": 389
+      "drafts_queued": 403
     },
     {
       "label": "Account 2",
@@ -35,7 +35,7 @@
       "threads_total": 122,
       "avg_engagement_rate": 9.4,
       "top_post_likes": 5,
-      "drafts_queued": 377
+      "drafts_queued": 441
     },
     {
       "label": "Account 3",
@@ -47,31 +47,31 @@
       "threads_total": 80,
       "avg_engagement_rate": 2.1,
       "top_post_likes": 2,
-      "drafts_queued": 442
+      "drafts_queued": 449
     },
     {
       "label": "Account 4",
       "niche": "Manifestation Engagement",
       "followers": 38,
-      "followers_delta_24h": 3,
+      "followers_delta_24h": 4,
       "posts_total": 1385,
       "posts_today": 0,
       "threads_total": 202,
       "avg_engagement_rate": 8.6,
       "top_post_likes": 3,
-      "drafts_queued": 665
+      "drafts_queued": 666
     },
     {
       "label": "Account 5",
       "niche": "Uplifting",
-      "followers": 324,
-      "followers_delta_24h": 0,
+      "followers": 323,
+      "followers_delta_24h": -1,
       "posts_total": 1291,
       "posts_today": 0,
       "threads_total": 166,
       "avg_engagement_rate": 2.1,
       "top_post_likes": 2,
-      "drafts_queued": 326
+      "drafts_queued": 344
     },
     {
       "label": "Account 6",
@@ -83,7 +83,7 @@
       "threads_total": 0,
       "avg_engagement_rate": 3.8,
       "top_post_likes": 3,
-      "drafts_queued": 74
+      "drafts_queued": 75
     }
   ],
   "youtube": {
@@ -97,7 +97,7 @@
         "niche": "General",
         "subscribers": 2,
         "videos_total": 21,
-        "videos_ready": 1,
+        "videos_ready": 2,
         "videos_today": 0,
         "total_views": 6653,
         "total_likes": 38
