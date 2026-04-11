@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-11T17:14:28.603638+00:00",
+  "generated_at": "2026-04-11T21:14:28.595749+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1339,
-    "total_posts": 6628,
+    "total_followers": 1123,
+    "total_posts": 6641,
     "total_threads": 3914,
-    "total_engagement_actions": 6618,
-    "avg_engagement_rate": 4.9,
-    "posts_today": 84,
-    "posts_this_week": 446,
-    "system_uptime_hours": 945,
-    "drafts_in_queue": 900
+    "total_engagement_actions": 6648,
+    "avg_engagement_rate": 4.8,
+    "posts_today": 97,
+    "posts_this_week": 459,
+    "system_uptime_hours": 949,
+    "drafts_in_queue": 918
   },
   "accounts": [
     {
@@ -21,15 +21,15 @@
       "posts_total": 792,
       "posts_today": 51,
       "threads_total": 222,
-      "avg_engagement_rate": 5.4,
+      "avg_engagement_rate": 5.3,
       "top_post_likes": 2,
-      "drafts_queued": 546
+      "drafts_queued": 538
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
-      "followers": 216,
-      "followers_delta_24h": 0,
+      "followers": 0,
+      "followers_delta_24h": -217,
       "posts_total": 832,
       "posts_today": 0,
       "threads_total": 122,
@@ -40,8 +40,8 @@
     {
       "label": "Account 3",
       "niche": "Geopolitics",
-      "followers": 256,
-      "followers_delta_24h": -3,
+      "followers": 257,
+      "followers_delta_24h": -2,
       "posts_total": 486,
       "posts_today": 0,
       "threads_total": 80,
@@ -64,24 +64,24 @@
     {
       "label": "Account 5",
       "niche": "Uplifting",
-      "followers": 341,
-      "followers_delta_24h": 3,
-      "posts_total": 1494,
-      "posts_today": 25,
+      "followers": 340,
+      "followers_delta_24h": 2,
+      "posts_total": 1500,
+      "posts_today": 31,
       "threads_total": 186,
       "avg_engagement_rate": 1.9,
       "top_post_likes": 2,
-      "drafts_queued": 334
+      "drafts_queued": 360
     },
     {
       "label": "Account 6",
       "niche": "Video Curator",
       "followers": 0,
-      "followers_delta_24h": -44,
-      "posts_total": 426,
-      "posts_today": 8,
+      "followers_delta_24h": -45,
+      "posts_total": 433,
+      "posts_today": 15,
       "threads_total": 0,
-      "avg_engagement_rate": 2.3,
+      "avg_engagement_rate": 2.1,
       "top_post_likes": 3,
       "drafts_queued": 0
     }
@@ -98,7 +98,7 @@
         "subscribers": 2,
         "videos_total": 21,
         "videos_ready": 2,
-        "videos_today": 1,
+        "videos_today": 2,
         "total_views": 6653,
         "total_likes": 38
       },
