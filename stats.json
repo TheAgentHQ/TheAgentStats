@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-04-11T01:14:28.592034+00:00",
+  "generated_at": "2026-04-11T05:14:28.592220+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1384,
-    "total_posts": 6555,
-    "total_threads": 3873,
-    "total_engagement_actions": 6474,
+    "total_followers": 1385,
+    "total_posts": 6580,
+    "total_threads": 3890,
+    "total_engagement_actions": 6516,
     "avg_engagement_rate": 5.0,
-    "posts_today": 11,
-    "posts_this_week": 373,
-    "system_uptime_hours": 929,
-    "drafts_in_queue": 1024
+    "posts_today": 36,
+    "posts_this_week": 398,
+    "system_uptime_hours": 933,
+    "drafts_in_queue": 1025
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 478,
-      "followers_delta_24h": -7,
-      "posts_total": 748,
-      "posts_today": 7,
-      "threads_total": 208,
-      "avg_engagement_rate": 5.2,
+      "followers": 479,
+      "followers_delta_24h": -6,
+      "posts_total": 769,
+      "posts_today": 28,
+      "threads_total": 213,
+      "avg_engagement_rate": 5.3,
       "top_post_likes": 2,
-      "drafts_queued": 567
+      "drafts_queued": 607
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 216,
-      "followers_delta_24h": 5,
+      "followers_delta_24h": 4,
       "posts_total": 832,
       "posts_today": 0,
       "threads_total": 122,
@@ -45,7 +45,7 @@
       "posts_total": 486,
       "posts_today": 0,
       "threads_total": 80,
-      "avg_engagement_rate": 1.8,
+      "avg_engagement_rate": 1.7,
       "top_post_likes": 2,
       "drafts_queued": 10
     },
@@ -65,13 +65,13 @@
       "label": "Account 5",
       "niche": "Uplifting",
       "followers": 338,
-      "followers_delta_24h": 3,
-      "posts_total": 1472,
-      "posts_today": 3,
-      "threads_total": 179,
+      "followers_delta_24h": 2,
+      "posts_total": 1476,
+      "posts_today": 7,
+      "threads_total": 180,
       "avg_engagement_rate": 2.0,
       "top_post_likes": 2,
-      "drafts_queued": 437
+      "drafts_queued": 398
     },
     {
       "label": "Account 6",
@@ -81,7 +81,7 @@
       "posts_total": 419,
       "posts_today": 1,
       "threads_total": 0,
-      "avg_engagement_rate": 3.0,
+      "avg_engagement_rate": 2.8,
       "top_post_likes": 3,
       "drafts_queued": 0
     }
