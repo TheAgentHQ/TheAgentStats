@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-04-12T05:14:28.596109+00:00",
+  "generated_at": "2026-04-12T09:14:28.594990+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1135,
-    "total_posts": 6709,
-    "total_threads": 3960,
-    "total_engagement_actions": 6714,
+    "total_followers": 1143,
+    "total_posts": 6714,
+    "total_threads": 3965,
+    "total_engagement_actions": 6760,
     "avg_engagement_rate": 4.8,
-    "posts_today": 61,
-    "posts_this_week": 481,
-    "system_uptime_hours": 957,
-    "drafts_in_queue": 884
+    "posts_today": 66,
+    "posts_this_week": 486,
+    "system_uptime_hours": 961,
+    "drafts_in_queue": 839
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 478,
-      "followers_delta_24h": -2,
-      "posts_total": 841,
-      "posts_today": 49,
-      "threads_total": 233,
+      "followers": 479,
+      "followers_delta_24h": 1,
+      "posts_total": 846,
+      "posts_today": 54,
+      "threads_total": 234,
       "avg_engagement_rate": 5.4,
       "top_post_likes": 2,
-      "drafts_queued": 514
+      "drafts_queued": 487
     },
     {
       "label": "Account 2",
@@ -41,7 +41,7 @@
       "label": "Account 3",
       "niche": "Geopolitics",
       "followers": 257,
-      "followers_delta_24h": -2,
+      "followers_delta_24h": 1,
       "posts_total": 486,
       "posts_today": 0,
       "threads_total": 80,
@@ -64,24 +64,24 @@
     {
       "label": "Account 5",
       "niche": "Uplifting",
-      "followers": 352,
-      "followers_delta_24h": 9,
+      "followers": 359,
+      "followers_delta_24h": 18,
       "posts_total": 1517,
       "posts_today": 11,
       "threads_total": 187,
       "avg_engagement_rate": 1.9,
       "top_post_likes": 2,
-      "drafts_queued": 350
+      "drafts_queued": 332
     },
     {
       "label": "Account 6",
       "niche": "Video Curator",
       "followers": 0,
-      "followers_delta_24h": -45,
+      "followers_delta_24h": 0,
       "posts_total": 435,
       "posts_today": 1,
       "threads_total": 0,
-      "avg_engagement_rate": 1.9,
+      "avg_engagement_rate": 1.8,
       "top_post_likes": 3,
       "drafts_queued": 0
     }
@@ -97,7 +97,7 @@
         "niche": "General",
         "subscribers": 2,
         "videos_total": 21,
-        "videos_ready": 2,
+        "videos_ready": 1,
         "videos_today": 0,
         "total_views": 6653,
         "total_likes": 38
