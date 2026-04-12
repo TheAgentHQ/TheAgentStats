@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-04-12T09:14:28.594990+00:00",
+  "generated_at": "2026-04-12T13:14:28.702943+00:00",
   "aggregate": {
     "total_accounts": 6,
-    "total_followers": 1143,
-    "total_posts": 6714,
-    "total_threads": 3965,
-    "total_engagement_actions": 6760,
+    "total_followers": 1150,
+    "total_posts": 6719,
+    "total_threads": 3966,
+    "total_engagement_actions": 6804,
     "avg_engagement_rate": 4.8,
-    "posts_today": 66,
-    "posts_this_week": 486,
-    "system_uptime_hours": 961,
-    "drafts_in_queue": 839
+    "posts_today": 71,
+    "posts_this_week": 491,
+    "system_uptime_hours": 965,
+    "drafts_in_queue": 808
   },
   "accounts": [
     {
       "label": "Account 1",
       "niche": "AI & Automation",
-      "followers": 479,
-      "followers_delta_24h": 1,
+      "followers": 481,
+      "followers_delta_24h": 3,
       "posts_total": 846,
       "posts_today": 54,
       "threads_total": 234,
-      "avg_engagement_rate": 5.4,
+      "avg_engagement_rate": 5.5,
       "top_post_likes": 2,
-      "drafts_queued": 487
+      "drafts_queued": 452
     },
     {
       "label": "Account 2",
       "niche": "Crypto Meme",
       "followers": 0,
-      "followers_delta_24h": -216,
+      "followers_delta_24h": 0,
       "posts_total": 832,
       "posts_today": 0,
       "threads_total": 122,
@@ -40,20 +40,20 @@
     {
       "label": "Account 3",
       "niche": "Geopolitics",
-      "followers": 257,
-      "followers_delta_24h": 1,
+      "followers": 258,
+      "followers_delta_24h": 2,
       "posts_total": 486,
       "posts_today": 0,
       "threads_total": 80,
       "avg_engagement_rate": 1.6,
       "top_post_likes": 2,
-      "drafts_queued": 10
+      "drafts_queued": 5
     },
     {
       "label": "Account 4",
       "niche": "Manifestation Engagement",
-      "followers": 48,
-      "followers_delta_24h": 0,
+      "followers": 49,
+      "followers_delta_24h": 1,
       "posts_total": 1385,
       "posts_today": 0,
       "threads_total": 202,
@@ -64,14 +64,14 @@
     {
       "label": "Account 5",
       "niche": "Uplifting",
-      "followers": 359,
-      "followers_delta_24h": 18,
-      "posts_total": 1517,
-      "posts_today": 11,
-      "threads_total": 187,
+      "followers": 362,
+      "followers_delta_24h": 22,
+      "posts_total": 1522,
+      "posts_today": 16,
+      "threads_total": 188,
       "avg_engagement_rate": 1.9,
       "top_post_likes": 2,
-      "drafts_queued": 332
+      "drafts_queued": 341
     },
     {
       "label": "Account 6",
@@ -81,7 +81,7 @@
       "posts_total": 435,
       "posts_today": 1,
       "threads_total": 0,
-      "avg_engagement_rate": 1.8,
+      "avg_engagement_rate": 1.7,
       "top_post_likes": 3,
       "drafts_queued": 0
     }
@@ -98,7 +98,7 @@
         "subscribers": 2,
         "videos_total": 21,
         "videos_ready": 1,
-        "videos_today": 0,
+        "videos_today": 1,
         "total_views": 6653,
         "total_likes": 38
       },
